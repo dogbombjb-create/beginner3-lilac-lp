@@ -30,31 +30,56 @@
 <body>
   <div class="wrapper">
     
-    <!-- 01. メインビジュアル (インパクト重視のエディトリアルレイアウト) -->
-    <header class="fv-container">
-      <div class="fv-bg"></div>
+    <!-- 01. メインビジュアル (大人の女性向け 洗練されたエディトリアルレイアウト) -->
+    <header class="fv-container premium-fv">
+      <div class="fv-bg-wrapper">
+        <div class="fv-bg-premium"></div>
+      </div>
       
-      <div class="fv-content">
-        <span class="en-title">Lilac Sugarflower Lesson</span>
+      <div class="fv-content-premium">
+        <div class="fv-accent-line"></div>
+        <span class="en-title-premium">Lilac<br>Sugarflower<br>Lesson</span>
         
-        <h1 class="fv-catch">
-          「既製品では少し物足りない。<br>
-          でも、手作りでも<br>重くしたくない。<br>
-          <span class="hero-strong">大切な日に、<br>気持ちも美しさも<br>妥協しない贈り方</span>」
+        <h1 class="fv-catch-premium">
+          既製品では少し物足りない。<br>
+          でも、手作りでも重くしたくない。<br>
+          <span class="hero-strong-premium">
+            大切な日に、<br>気持ちも美しさも<br>妥協しない贈り方
+          </span>
         </h1>
         
-        <p class="fv-sub">
+        <p class="fv-sub-premium">
           一輪のライラックから始める、<br>
-          スターターキット付きの<br>オンライン体験講座です。<br>
+          スターターキット付きのオンライン体験講座。<br>
           初めての方でもご参加いただけます。
         </p>
         
-        <div class="fv-cta-wrapper">
-          <a href="#apply" class="btn-cta" style="margin-bottom: 1.5rem;">スターターキット付き<br>体験講座に申し込む</a>
+        <div class="fv-cta-wrapper-premium">
+          <a href="#apply" class="btn-cta">体験講座に申し込む</a>
+          <p class="fv-deadline">申込締切：5月16日（土）まで</p>
         </div>
       </div>
     </header>
     
+    <!-- 写真スライドカルーセル（FVとの境目に配置） -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <img src="images/gift_scene_1776662834380.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/sugar_bouquet_new.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/wedding_cake_1776662879556.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/instructor_hands_1776662891849.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/lilac_closing_new.webp" alt="ギャラリー" class="marquee-photo">
+      </div>
+      <!-- 無限ループ用複製 -->
+      <div class="marquee-track">
+        <img src="images/gift_scene_1776662834380.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/sugar_bouquet_new.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/wedding_cake_1776662879556.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/instructor_hands_1776662891849.webp" alt="ギャラリー" class="marquee-photo">
+        <img src="images/lilac_closing_new.webp" alt="ギャラリー" class="marquee-photo">
+      </div>
+    </div>
+
     <!-- FV直下のインフォボックス（フルスクリーンデザインの邪魔にならないようFV領域から出して配置） -->
     <section style="padding-top: 1rem; padding-bottom: 1rem; background: var(--bg-color);">
       <div class="info-box note" style="margin-top: 0; box-shadow:none; border-top:none; border-left:none; border-right:none;">
@@ -67,151 +92,161 @@
     </section>
 
     <!-- 02. 利用シーンの提示 -->
-    <section class="fade-in bg-alt">
-      <h2 class="section-title">この講座は、<br>こんな方のための入口です</h2>
+    <section class="fade-in sales-problem-sec bg-wave-bottom" style="position: relative; z-index: 30;">
+      <div class="text-center">
+        <h2 class="section-title" style="color: #fff;">この講座は、<br>こんな方のための入口です</h2>
+      </div>
       
-      <div class="zigzag-row">
-        <div class="zigzag-text note">
-          きれいに整った<br>既製品も素敵です。<br>
-          でも、<br>
-          誕生日や記念日、<br>
-          そして結婚式のような<br>
-          特別な日には、<br>
-          もう少し自分の気持ちが<br>乗ったものを<br>
-          選びたくなることが<br>ありますよね。
-        </div>
-        <div class="zigzag-img">
-          <img src="images/gift_scene_1776662834380.png" alt="贈りものシーン1" class="photo-frame" loading="lazy">
-        </div>
+      <div class="speech-bubble-dark">
+        きれいに整った<br>既製品も素敵です。<br>
+        でも、<br>
+        誕生日や記念日、<br>
+        そして結婚式のような<br>
+        特別な日には、<br>
+        もう少し自分の気持ちが<br>乗ったものを<br>
+        選びたくなることが<br>ありますよね。
+      </div>
+      
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="images/gift_scene_1776662834380.webp" alt="贈りものシーン1" class="photo-frame" style="max-width: 250px; margin: 0 auto;" loading="lazy">
       </div>
 
-      <div class="zigzag-row reverse">
-        <div class="zigzag-text note">
-          ただ、<br>
-          手作りなら何でもいい<br>わけでもありません。<br><br>
-          気持ちは込めたい。<br>
-          でも、<br>
-          相手に負担なく<br>受け取ってほしい。
-        </div>
-        <div class="zigzag-img">
-          <img src="images/instructor_hands_1776662891849.png" alt="手作りの様子" class="photo-frame" loading="lazy">
-        </div>
+      <div class="problem-arrow">▼</div>
+      
+      <div class="speech-bubble-dark">
+        ただ、<br>
+        手作りなら何でもいい<br>わけでもありません。<br><br>
+        気持ちは込めたい。<br>
+        でも、<br>
+        相手に負担なく<br>受け取ってほしい。
       </div>
 
-      <div class="zigzag-row" style="margin-bottom:0;">
-        <div class="zigzag-text note">
-          <span class="text-highlight">上品で、美しくて、<br>ちゃんと想いが伝わる<br>形にしたい。</span><br><br>
-          この講座は、<br>
-          そんな繊細な感覚を持つ<br>方のために作りました。
-        </div>
-        <div class="zigzag-img">
-          <img src="images/sugar_bouquet_1776662850386.png" alt="想いが伝わる形" class="photo-frame" loading="lazy">
-        </div>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="images/instructor_hands_1776662891849.webp" alt="手作りの様子" class="photo-frame" style="max-width: 250px; margin: 0 auto;" loading="lazy">
+      </div>
+
+      <div class="problem-arrow">▼</div>
+      
+      <div class="speech-bubble-highlight">
+        上品で、美しくて、<br>ちゃんと想いが伝わる<br>形にしたい。<br><br>
+        この講座は、<br>
+        そんな繊細な感覚を持つ<br>方のために作りました。
+      </div>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="images/sugar_bouquet_new.webp" alt="想いが伝わる形" class="photo-frame" style="max-width: 250px; margin: 0 auto;" loading="lazy">
       </div>
     </section>
 
     <!-- 03. 作品と技術の対比 -->
-    <section class="fade-in">
-      <h2 class="section-title">まずは一輪から。<br>でも、そこで終わる講座では<br>ありません</h2>
-      
-      <p class="text-center" style="margin-bottom: 2rem;">
-        この体験講座で作るのは、<br>
-        ブーケの中の一輪を担う「ライラック」です。<br><br>
-        小さな花が集まり、<br>
-        やわらかな表情を作るライラックは、<br>
-        繊細さと上品さを感じられるお花です。<br><br>
-        初めての方が、<br>
-        シュガーフラワーならではの薄さや<br>
-        花びらの表情を学ぶ入口としても向いています。
-      </p>
+    <section class="fade-in bg-alt bg-wave-bottom" style="padding-top: 5rem; position: relative; z-index: 20;">
+      <div class="step-card">
+        <div class="step-badge">POINT 01</div>
+        <h2 class="section-title text-highlight" style="margin-bottom: 1rem; color: var(--sales-purple); font-size:1.3rem;">まずは一輪から。<br>でも、そこで終わる講座では<br>ありません</h2>
+        
+        <p class="text-center" style="margin-bottom: 2rem;">
+          この体験講座で作るのは、<br>
+          ブーケの中の一輪を担う<br>「ライラック」です。<br><br>
+          小さな花が集まり、<br>
+          やわらかな表情を作るライラックは、<br>
+          繊細さと上品さを<br>感じられるお花です。<br><br>
+          初めての方が、<br>
+          シュガーフラワーならではの薄さや<br>
+          花びらの表情を学ぶ入口としても<br>向いています。
+        </p>
 
-      <div class="grid-2">
-        <img src="images/lilac_closing_1776662906850.png" alt="ライラック単体" class="photo-frame" loading="lazy">
-        <img src="images/sugar_bouquet_1776662850386.png" alt="ブーケ写真" class="photo-frame" loading="lazy">
+        <div class="grid-2">
+          <img src="images/lilac_hand_new.webp" alt="ライラック単体" class="photo-frame" style="width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+          <img src="images/lilac_dark_hand.webp" alt="ライラックの表情" class="photo-frame" style="width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+        </div>
+
+        <hr class="text-divider">
+
+        <p class="text-center text-highlight">
+          今回は、ライラック一房と、<br>
+          より美しく仕上げるための葉まで<br>作っていきます。
+        </p>
+
+        <p class="text-center" style="margin-top: 2rem;">
+          ただし、<br>
+          この講座は<br>
+          一輪を作って終わるためのものではありません。<br><br>
+          その先にある<br>
+          「束ねること」<br>
+          「整えること」<br>
+          「贈れる形に仕上げること」<br>
+          へ進むための、きちんとした入口です。
+        </p>
       </div>
 
-      <hr class="text-divider">
+      <!-- 04. 初心者へのサポート -->
+      <div class="step-card">
+        <div class="step-badge">POINT 02</div>
+        <h2 class="section-title text-highlight" style="margin-bottom: 1rem; color: var(--sales-purple); font-size:1.3rem;">初めての方でも<br>始めやすいように、<br>入口から整えています</h2>
+        <p class="text-center">
+          シュガーフラワーは、<br>
+          美しい反面、<br>
+          難しそうに見える技術です。<br>
+          だからこそ、<br>
+          この体験講座では<br>
+          初めての方でも進めやすい形を大切にしています。
+        </p>
+        
+        <div class="check-list">
+          <ul>
+            <li>スターターキット付きです。</li>
+            <li>初心者向けオリジナルペーストを使用します。</li>
+            <li>ワイヤーや必要な準備物も含まれています。</li>
+            <li>録画視聴があります。</li>
+            <li>再開催時は無料で再受講していただけます。</li>
+            <li>ご質問は、チャットやLINEで受け付けています。</li>
+          </ul>
+        </div>
 
-      <p class="text-center text-highlight">
-        今回は、ライラック一房と、<br>
-        より美しく仕上げるための葉まで<br>作っていきます。
-      </p>
+        <p class="text-center note">
+          何を揃えたらいいのかわからない。<br>
+          途中で止まってしまいそう。<br>
+          オンラインでついていけるか不安。<br><br>
+          <span class="text-highlight">そうした最初のハードルを、<br>
+          できるだけ減らした状態で<br>始められるようにしています。</span>
+        </p>
 
-      <p class="text-center" style="margin-top: 2rem;">
-        ただし、<br>
-        この講座は<br>
-        一輪を作って終わるためのものではありません。<br><br>
-        その先にある<br>
-        「束ねること」<br>
-        「整えること」<br>
-        「贈れる形に仕上げること」<br>
-        へ進むための、きちんとした入口です。
-      </p>
-    </section>
-
-    <!-- 04. 初心者へのサポート -->
-    <section class="bg-alt fade-in">
-      <h2 class="section-title">初めての方でも<br>始めやすいように、<br>入口から整えています</h2>
-      <p class="text-center">
-        シュガーフラワーは、<br>
-        美しい反面、<br>
-        難しそうに見える技術です。<br>
-        だからこそ、<br>
-        この体験講座では<br>
-        初めての方でも進めやすい形を大切にしています。
-      </p>
-      
-      <div class="check-list">
-        <ul>
-          <li>スターターキット付きです。</li>
-          <li>初心者向けオリジナルペーストを使用します。</li>
-          <li>ワイヤーや必要な準備物も含まれています。</li>
-          <li>録画視聴があります。</li>
-          <li>再開催時は無料で再受講していただけます。</li>
-          <li>ご質問は、チャットやLINEで受け付けています。</li>
-        </ul>
-      </div>
-
-      <p class="text-center note">
-        何を揃えたらいいのかわからない。<br>
-        途中で止まってしまいそう。<br>
-        オンラインでついていけるか不安。<br><br>
-        <span class="text-highlight">そうした最初のハードルを、<br>
-        できるだけ減らした状態で<br>始められるようにしています。</span>
-      </p>
-
-      <div class="grid-2" style="margin-top: 2rem;">
-        <img src="images/starter_kit_1776662863450.png" alt="スターターキット写真" class="photo-frame" loading="lazy">
-        <img src="images/instructor_hands_1776662891849.png" alt="オンラインサポートイメージ" class="photo-frame" loading="lazy">
+        <div class="grid-2" style="margin-top: 2rem;">
+          <img src="images/starter_kit_new.webp" alt="スターターキット写真" class="photo-frame" loading="lazy">
+          <img src="images/instructor_hands_1776662891849.webp" alt="オンラインサポートイメージ" class="photo-frame" loading="lazy">
+        </div>
       </div>
     </section>
 
     <!-- タイムラインUI -->
     <section class="fade-in">
-      <h2 class="section-title">3時間で、ここまで進みます</h2>
-      <p class="text-center note" style="margin-bottom: 2rem;">
-        この体験講座では、<br>
-        ライラック一房とより上品に仕上げる葉も<br>
-        仕上げていきます。
-      </p>
+      <div class="step-card">
+        <div class="step-badge">POINT 03</div>
+        <h2 class="section-title text-highlight" style="margin-bottom: 1rem; color: var(--sales-purple); font-size:1.3rem;">3時間で、ここまで進みます</h2>
+        <p class="text-center note" style="margin-bottom: 2rem;">
+          この体験講座では、<br>
+          ライラック一房とより上品に仕上げる葉も<br>
+          仕上げていきます。
+        </p>
 
-      <div class="timeline">
-        <div class="timeline-step">
-          <h4>イメージの確認</h4>
-          <p class="note">最初に、レッスン全体の流れと完成イメージを確認します。</p>
-        </div>
-        <div class="timeline-step">
-          <h4>基本の形づくり</h4>
-          <p class="note">その後、ペーストを整えながら基本の形を作り、花びらの表情をつけていきます。</p>
-        </div>
-        <div class="timeline-step">
-          <h4>房の成形と葉の制作</h4>
-          <p class="note">ワイヤーを通して一輪のお花に<br>仕上げたあと、花やつぼみを<br>まとめながら、ライラックらしい<br>房の形まで整えていきます。<br>
-          そして、お花を際立たせる<br>葉っぱの成型</p>
-        </div>
-        <div class="timeline-step">
-          <h4>仕上げ</h4>
-          <p class="note">最後は、全体を確認しながら仕上げのフィードバックを行います。</p>
+        <div class="timeline">
+          <div class="timeline-step">
+            <h4>イメージの確認</h4>
+            <p class="note">最初に、レッスン全体の流れと完成イメージを確認します。</p>
+          </div>
+          <div class="timeline-step">
+            <h4>基本の形づくり</h4>
+            <p class="note">その後、ペーストを整えながら基本の形を作り、花びらの表情をつけていきます。</p>
+          </div>
+          <div class="timeline-step">
+            <h4>房の成形と葉の制作</h4>
+            <p class="note">ワイヤーを通して一輪のお花に<br>仕上げたあと、花やつぼみを<br>まとめながら、ライラックらしい<br>房の形まで整えていきます。<br>
+            そして、お花を際立たせる<br>葉っぱの成型</p>
+          </div>
+          <div class="timeline-step">
+            <h4>仕上げ</h4>
+            <p class="note">最後は、全体を確認しながら仕上げのフィードバックを行います。</p>
+          </div>
         </div>
       </div>
     </section>
@@ -223,18 +258,21 @@
         この講座で学ぶのは、<br>
         ただ可愛いものを作るための<br>
         単発体験ではありません。<br><br>
-        <span class="text-highlight">シュガークラフトの技術を土台にした、<br>
+        <span class="text-highlight">シュガークラフトの技術を<br>土台にした、<br>
         繊細で本格的な花の技術です。</span><br><br>
         しかも、<br>
-        目指しているのは一輪の完成ではありません。<br><br>
+        目指しているのは一輪の完成では<br>ありません。<br><br>
         その先で、ブーケとして組み、<br>
         流れを整え、<br>
-        そのまま贈れる形まで仕上げることです。<br><br>
+        そのまま贈れる形まで<br>仕上げることです。<br><br>
         趣味で少し触れて<br>終わるのではなく、<br>
         きちんと技術として学びたい方に<br>向けた入口です。
       </p>
-      <div style="margin-top: 2rem;">
-        <img src="images/sugar_bouquet_1776662850386.png" alt="完成度の高い作品写真" class="photo-frame" style="width: 100%;" loading="lazy">
+      <div style="margin-top: 2rem; margin-bottom: 3rem;">
+        <img src="images/sugar_bouquet_new.webp" alt="完成度の高い作品写真" class="photo-frame" style="width: 100%; margin-bottom: 0.8rem;" loading="lazy">
+        <p class="note" style="color: var(--text-light); font-size: 0.85rem; line-height: 1.6; text-align: center;">
+          ※これが実際の本講座『シュガーフラワービギナー講座』で<br>完成するブーケの写真です。
+        </p>
       </div>
     </section>
 
@@ -243,17 +281,17 @@
       <h2 class="section-title">この体験講座の先で、<br>実際にこんな変化が起きています</h2>
       <p class="text-center note" style="margin-bottom: 2rem;">
         この体験講座は、ただ一輪を作って<br>終わるためのものではありません。<br>
-        その先にある「シュガーフラワー<br>ビギナー講座」では、<br>束ねること。流れを整えること。<br>ブーケとして仕上げることまで<br>学んでいきます。<br><br>
-        実際に受講された方からは、こんなお声をいただいています。
+        その先にある「シュガーフラワー<br>ビギナー講座」では、<br>束ねること。<br>流れを整えること。<br>ブーケとして仕上げることまで<br>学んでいきます。<br><br>
+        実際に受講された方からは、<br>こんなお声をいただいています。
       </p>
       
-      <div class="quote-bubble note">
+      <div class="quote-bubble note" style="border: 2px solid var(--accent-color); font-weight: bold;">
         「娘の結婚式のために学びたかった」
       </div>
-      <div class="quote-bubble note">
+      <div class="quote-bubble note" style="border: 2px solid var(--sales-purple); font-weight: bold;">
         「ただ可愛いだけではなく、きちんと技術として身についた」
       </div>
-      <div class="quote-bubble note">
+      <div class="quote-bubble note" style="border: 2px solid var(--accent-color); font-weight: bold;">
         「一輪ではなく、贈れる形まで整えられるようになった」
       </div>
 
@@ -261,8 +299,17 @@
         まずは、受講生のダイジェスト動画でご覧ください。
       </p>
 
-      <div style="margin-top: 1.5rem;" class="photo-frame">
-        <img src="images/lilac_fv_1776662820398.png" alt="ハイライト動画イメージ" loading="lazy" style="width: 100%;">
+      <!-- タップで動画プレーヤーに切り替わる構造 -->
+      <div id="student-video-container" style="margin-top: 1.5rem; cursor: pointer; position: relative; overflow: hidden;" class="photo-frame" onclick="this.innerHTML='<div style=\'position:relative;aspect-ratio:16/9;\'><iframe loading=\'lazy\' src=\'https://play.gumlet.io/embed/69e740d83e13c773bca689dc?background=false&amp;autoplay=true&amp;loop=false&amp;disable_player_controls=false\' style=\'border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;\' allow=\'autoplay; fullscreen\'></iframe></div>'; this.onclick=null; this.classList.remove('photo-frame'); this.style.padding='0'; this.style.border='none';">
+        <div style="position: relative;">
+          <!-- 指定された差し替え画像 -->
+          <img src="images/student_works_grid.webp" alt="受講生ダイジェスト動画" loading="lazy" style="width: 100%; vertical-align: bottom;">
+          <!-- 再生ボタン（オーバーレイ） -->
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <!-- 再生の三角形 -->
+            <div style="width: 0; height: 0; border-top: 14px solid transparent; border-bottom: 14px solid transparent; border-left: 20px solid #fff; margin-left: 6px;"></div>
+          </div>
+        </div>
       </div>
 
       <p class="note text-center" style="margin-top: 1rem; color: #999;">
@@ -276,7 +323,7 @@
       <h2 class="section-title">シュガーフラワーが、<br>特別な日と相性がいい理由</h2>
       <p class="text-center">
         シュガーフラワーは、<br>
-        英国のウェディング文化の中で育まれてきた、<br>
+        英国のウェディング文化の中で<br>育まれてきた、<br>
         祝福を美しく形にする技術です。<br><br>
         だからこそ、ただ可愛いだけではなく、<br>
         節目の日にふさわしい上品さがあります。<br><br>
@@ -288,9 +335,9 @@
         気持ちを込めながらも、<br>押しつけがましくならずに、<br>
         美しく想いを届けることができます。<br><br>
         <span class="text-highlight">娘さんの結婚式を、<br>自分の手で祝いたい。</span><br>
-        そんな願いとも、とても相性のいい技術です。<br><br>
+        そんな願いとも、<br>とても相性のいい技術です。<br><br>
         まずは一輪から、<br>
-        体験講座でその入口に触れてみてください。
+        体験講座でその入口に<br>触れてみてください。
       </p>
       
       <div style="margin: 2.5rem 0;">
@@ -298,63 +345,66 @@
       </div>
 
       <div class="grid-2">
-        <img src="images/wedding_cake_1776662879556.png" alt="ウェディング関連作品1" class="photo-frame" loading="lazy">
-        <img src="images/sugar_bouquet_1776662850386.png" alt="ウェディング関連作品2" class="photo-frame" loading="lazy">
-        <img src="images/lilac_closing_1776662906850.png" alt="ウェディング関連作品3" class="photo-frame" style="grid-column: span 2;" loading="lazy">
+        <img src="images/wedding_cake_1776662879556.webp" alt="ウェディング関連作品1" class="photo-frame" style="width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+        <img src="images/bride_bouquet.webp" alt="ウェディング関連作品2" class="photo-frame" style="width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+        <img src="images/lilac_closing_new.webp" alt="ウェディング関連作品3" class="photo-frame" style="grid-column: span 2; width: 100%; height: 100%; object-fit: cover;" loading="lazy">
       </div>
     </section>
 
     <!-- 08. 講師 -->
     <section class="fade-in">
-      <h2 class="section-title">指導は、<br>実績と経験のある講師が行います</h2>
-      
-      <div style="margin-bottom: 2rem;">
-        <img src="images/instructor_hands_1776662891849.png" alt="講師イメージ" class="photo-frame" style="border-radius: 50%; max-width: 200px; margin: 0 auto;" loading="lazy">
-      </div>
+      <div class="profile-box">
+        <div class="profile-title">講師プロフィール</div>
+        <h2 class="section-title" style="margin-top: 1rem; font-size: 1.2rem;">指導は、<br>実績と経験のある講師が行います</h2>
+        
+        <div style="margin-bottom: 2rem;">
+          <img src="images/instructor_hands_1776662891849.webp" alt="講師イメージ" class="photo-frame" style="border-radius: 50%; max-width: 200px; margin: 0 auto;" loading="lazy">
+        </div>
 
-      <p class="text-center note">
-        この講座を担当するのは、<br>
-        エコールシュクレ主宰の<br>
-        <strong style="font-size: 1.1rem; color: var(--text-main);">平川かなえ先生</strong>です。<br><br>
-        日本シュガーアートドール協会<br>
-        シュガーフラワー専任講師。<br>
-        目白大学短期大学製菓学科<br>シュガークラフト講師。<br>
-        つくば栄養医療調理製菓専門学校<br>シュガークラフト講師として、<br>
-        長く指導に携わってこられました。
-      </p>
+        <p class="text-center note">
+          この講座を担当するのは、<br>
+          エコールシュクレ主宰の<br>
+          <strong style="font-size: 1.1rem; color: var(--text-main);">平川かなえ先生</strong>です。<br><br>
+          日本シュガーアートドール協会<br>
+          シュガーフラワー専任講師。<br>
+          目白大学短期大学製菓学科<br>シュガークラフト講師。<br>
+          つくば栄養医療調理製菓専門学校<br>シュガークラフト講師として、<br>
+          長く指導に携わってこられました。
+        </p>
 
-      <hr class="text-divider">
+        <hr class="text-divider">
 
-      <p class="text-center note">
-        英国での学びも重ね、国内外の<br>コンペティションでも高い評価を<br>受けています。<br><br>
-        2024年には、<br>
-        ジャパンケーキショー シュガークラフト部門<br>グランプリ、連合会会長賞を<br>受賞されています。<br><br>
-        高い技術を持つだけではなく、<br>
-        初めての方でも進めるように、<br>順番と流れを整えて指導して<br>くださる先生です。
-      </p>
+        <p class="text-center note">
+          英国での学びも重ね、国内外の<br>コンペティションでも高い評価を<br>受けています。<br><br>
+          2024年には、<br>
+          ジャパンケーキショー<br>シュガークラフト部門<br>グランプリ、連合会会長賞を<br>受賞されています。<br><br>
+          高い技術を持つだけではなく、<br>
+          初めての方が迷わず進めるように、<br>順番と流れを整えて指導して<br>くださる先生です。
+        </p>
 
-      <div class="grid-2" style="margin-top: 2rem;">
-        <img src="images/gift_scene_1776662834380.png" alt="受賞実績" class="photo-frame" loading="lazy">
-        <img src="images/sugar_bouquet_1776662850386.png" alt="講師作品" class="photo-frame" loading="lazy">
+        <div class="grid-2" style="margin-top: 2rem;">
+          <img src="images/gift_scene_1776662834380.webp" alt="受賞実績" class="photo-frame" loading="lazy">
+          <img src="images/sugar_bouquet_new.webp" alt="講師作品" class="photo-frame" loading="lazy">
+        </div>
       </div>
     </section>
 
     <!-- 09. ご受講について (料金とオファー) -->
-    <section class="bg-alt fade-in" id="apply">
-      <h2 class="section-title">ご受講について</h2>
+    <section class="fade-in bg-wave-bottom" id="apply" style="background: var(--sales-dark); color: #fff; padding-top: 5rem; padding-bottom: 6rem; position: relative; z-index: 10;">
+      <h2 class="section-title" style="color: #fff; border-bottom: 2px solid var(--accent-color); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 3rem;">ご受講について</h2>
       
-      <div class="info-box" style="margin-top: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: none;">
-        <h3 style="text-align: center; color: var(--accent-color); margin-bottom: 1.5rem;">
+      <div class="info-box" style="margin-top: 0; border: 6px solid var(--accent-gold); border-radius: 10px; position: relative;">
+        <h3 style="text-align: center; color: var(--sales-purple); margin-bottom: 1.5rem; font-weight: bold; font-size: 1.4rem;">
           シュガーフラワービギナー体験講座<br>
-          <span style="font-size: 0.9rem; color: var(--text-main);">「ライラック制作＋スターターキット付き」</span>
+          <span style="font-size: 0.85rem; color: var(--text-main); letter-spacing: 0; display: block; margin-top: 0.3rem;">「ライラック制作＋スターターキット付き」</span>
         </h3>
         
-        <p style="text-align: center; margin-bottom: 1.5rem;">
-          受講料<br>
-          <span class="price-highlight">税込 7,980円</span>
+        <p style="text-align: center; margin-bottom: 1.5rem; background: #FFF5F8; padding: 1.5rem; border-radius: 8px; border: 2px dashed var(--accent-color);">
+          <span style="font-weight: bold; color: var(--text-main);">受講料</span><br>
+          <span class="price-highlight" style="font-size: 2.2rem; color: #C05467; display: inline-block; margin-top: 0.5rem;">税込 7,980円</span>
         </p>
 
-        <p class="text-center" style="border-top: 1px dashed var(--border-color); padding-top: 1.5rem; margin-bottom: 1.5rem;">
+        <p class="text-center" style="border-top: 1px dashed var(--border-color); padding-top: 1.5rem; margin-bottom: 1.5rem; color: var(--text-main);">
           <strong>開催日程</strong><br>
           5月22日（金）10:00〜13:00<br>
           5月23日（土）10:00〜13:00<br>
@@ -364,28 +414,47 @@
           </span>
         </p>
 
-        <p class="text-center" style="font-weight: bold; color: #b30000; margin-bottom: 1.5rem;">
+        <p class="text-center" style="font-weight: bold; background: #C05467; color: #fff; padding: 0.5rem; border-radius: 4px; margin-bottom: 1.5rem;">
           申込締切：5月16日（土）まで
         </p>
 
-        <p class="text-center note">
+        <p class="text-center note" style="color: var(--text-main);">
           各回8名までの少人数開催です。<br>
           丁寧なサポートを大切にしているため、<br>定員を絞ってご案内しています。
         </p>
       </div>
 
-      <p class="text-center note" style="margin-top: 2rem;">
+      <p class="text-center note" style="margin-top: 3rem; color: #fff;">
         この講座には、ライラック制作レッスンに<br>加えて、スターターキットが含まれています。<br><br>
         今回お届けするスターターキットは、<br>その後の「シュガーフラワー<br>ビギナー講座」でも<br>そのままお使いいただけます。<br><br>
-        <span class="text-highlight">さらに、体験講座ご受講後に<br>本講座へ進まれる場合は、<br>今回の受講料を本講座の受講料から<br>割引いたします。</span><br><br>
+        <span style="color: #FFD700; font-weight: bold; font-size: 1.1rem;">さらに、体験講座ご受講後に<br>本講座へ進まれる場合は、<br>今回の受講料を<br>本講座の受講料から<br>割引いたします。</span><br><br>
         つまり、今回の体験は<br>その場限りのお試しではなく、<br>本格的に学ぶための入口です。
       </p>
 
       <div style="margin: 2.5rem 0;">
-        <a href="#" class="btn-cta">スターターキット付き<br>体験講座に申し込む</a>
+        <a href="#apply" class="btn-cta">体験講座に申し込む</a>
       </div>
       
-      <img src="images/starter_kit_1776662863450.png" alt="キット内容" class="photo-frame" style="max-width: 60%; margin: 0 auto;" loading="lazy">
+      <div style="margin-bottom: 3rem;">
+        <p class="text-center" style="color: rgba(255,255,255,0.9); margin-bottom: 1rem; font-weight: bold;">
+          ▼ スターターキットのご紹介（動画）
+        </p>
+        <!-- 縦動画（PCでも大きくなりすぎないようmax-width設定） -->
+        <div style="position:relative; aspect-ratio:9/16; max-width: 320px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.15);">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/691fd0de55e54fac094caf0a?background=false&autoplay=false&loop=false&disable_player_controls=false"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+            referrerpolicy="origin"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+      </div>
+      
+      <p class="text-center" style="color: rgba(255,255,255,0.9); margin-bottom: 1rem; font-weight: bold;">
+        お届けするキット内容
+      </p>
+      <img src="images/starter_kit_new.webp" alt="キット内容" class="photo-frame" style="max-width: 80%; margin: 0 auto;" loading="lazy">
     </section>
 
     <!-- お申し込み後の流れ & サポート -->
@@ -436,36 +505,55 @@
       
       <div class="faq-item">
         <div class="faq-q">シュガーフラワーがまったく初めてでも大丈夫ですか。</div>
-        <div class="faq-a">
-          はい。大丈夫です。<br>
-          この体験講座は、初めての方にも<br>ご参加いただけるように設計しています。<br>
-          必要な道具はスターターキットとして<br>お届けしますので、何を揃えればよいか<br>わからないまま止まってしまう心配も<br>ありません。
+        <div class="faq-a" style="word-break: auto-phrase;">
+          はい。大丈夫です。<br>この体験講座は、初めての方にもご参加いただけるように設計しています。必要な道具はスターターキットとしてお届けしますので、何を揃えればよいかわからないまま止まってしまう心配もありません。
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q">不器用でもついていけますか。</div>
-        <div class="faq-a">
-          はい。大丈夫です。<br>
-          うまくいかない理由の多くは、<br>器用さよりも「完成までの順番」が<br>わからないことにあります。<br>
-          この体験講座では、流れに沿って<br>進めていけるように設計しています。<br>ご質問は、チャットやLINEで<br>受け付けています。
+        <div class="faq-a" style="word-break: auto-phrase;">
+          はい。大丈夫です。<br>うまくいかない理由の多くは、器用さよりも「完成までの順番」がわからないことにあります。<br>この体験講座では、流れに沿って迷わず進めていけるように設計しています。ご質問は、チャットやLINEで受け付けています。
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q">体験講座だけで終わっても大丈夫ですか。</div>
-        <div class="faq-a">
-          はい。もちろん大丈夫です。<br>
-          まずは、シュガーフラワーの世界に<br>触れていただけたらと思っています。<br>
-          その上で、もっと先へ進みたいと<br>感じられた方にだけ、本講座を<br>ご案内しています。
+        <div class="faq-a" style="word-break: auto-phrase;">
+          はい。もちろん大丈夫です。<br>まずは、シュガーフラワーの世界に触れていただけたらと思っています。その上で、もっと先へ進みたいと感じられた方にだけ、本講座をご案内しています。
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q">キャンセルはできますか。</div>
-        <div class="faq-a">
-          スターターキット発送後のキャンセルは<br>お受けできません。あらかじめご了承ください。
+        <div class="faq-a" style="word-break: auto-phrase;">
+          スターターキット発送後のキャンセルはお受けできません。あらかじめご了承ください。
         </div>
+      </div>
+    </section>
+
+    <!-- LINE公式案内（迷っている方へ） -->
+    <section class="fade-in">
+      <div class="info-box" style="border: 2px solid var(--accent-gold); margin-top: 2rem;">
+        <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 2rem;">まだ申込までは迷う方へ</h2>
+        <p class="text-center" style="margin-bottom: 2rem;">
+          ここまでお読みいただき、<br>ありがとうございます。<br><br>
+          体験講座が気になっているけれど、<br>もう少し作品例を見てから<br>決めたい方。<br><br>
+          日程や準備を確認しながら、<br>あらためて検討したい方。<br><br>
+          <span class="text-highlight">そんな方へ向けて、<br>LINEでもご案内をお届けしています。</span><br><br>
+          募集開始のお知らせや、<br>作品の雰囲気がわかる情報。<br>ご質問の受付をご希望の方は、<br>こちらからご登録ください。
+        </p>
+        
+        <div style="margin: 2.5rem 0;">
+          <!-- スマホ幅でも美しく、LPの上品なトンマナに合わせた白抜きボタン -->
+          <a href="#line" class="btn-cta" style="background: #fff; color: var(--accent-color); border: 2px solid var(--accent-color); box-shadow: none;">
+            まずはLINEで案内を受け取る
+          </a>
+        </div>
+
+        <p class="note text-center" style="color: var(--text-light); border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+          ※体験講座に申し込むかどうかは、<br>LINE登録後にゆっくりご検討いただけます。
+        </p>
       </div>
     </section>
 
@@ -474,7 +562,7 @@
       <h2 class="section-title">最後に</h2>
       <p class="text-center note">
         きれいに整った既製品も素敵です。<br>
-        でも、<br>大切な日には、もう少し自分の気持ちが<br>乗ったものを選びたくなることがあります。<br><br>
+        でも、<br>大切な日には、<br>もう少し自分の気持ちが乗ったものを<br>選びたくなることがあります。<br><br>
         結婚式のような人生の節目にも。<br>
         大切な人へのお祝いにも。<br><br>
         <span class="text-highlight">そんなときに、重たくならずに、<br>でもちゃんと想いが伝わる形を、<br>自分の手で作れたら素敵ですよね。</span><br><br>
@@ -483,11 +571,11 @@
       </p>
 
       <div style="margin: 3rem 0;">
-        <a href="#apply" class="btn-cta">まずは体験講座に申し込む</a>
+        <a href="#apply" class="btn-cta">体験講座に申し込む</a>
       </div>
 
-      <div style="margin-top: 2rem;">
-        <img src="images/lilac_closing_1776662906850.png" alt="完成作品の別カット" class="photo-frame" style="width: 100%;" loading="lazy">
+      <div style="text-align: center; margin-top: 2rem;">
+        <img src="images/lilac_closing_collage.webp" alt="完成作品の別カット" class="photo-frame" style="max-width: 340px; margin: 0 auto; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
       </div>
     </section>
     
