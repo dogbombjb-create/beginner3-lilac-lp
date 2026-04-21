@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Zen+Old+Mincho:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Zen+Old+Mincho:wght@400;500;700&display=swap');
 
 :root {
   --bg-color: #FDFCF9; 
@@ -690,6 +690,7 @@ section.bg-alt {
   padding: 0.4rem 1.5rem;
   border-radius: 4px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 /* FV下部のスライドカルーセル */
