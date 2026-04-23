@@ -733,3 +733,270 @@ section.bg-alt {
   0% { opacity: 0; transform: translateY(40px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+/* =========================================
+   エディトリアルレイアウト（こんな方におすすめ〜）
+   ========================================= */
+
+/* 1. こんな方のための入口です */
+.editorial-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--section-bg-alt);
+}
+.editorial-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.editorial-title .sub {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.editorial-title .main {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  font-family: "Zen Old Mincho", serif;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid var(--accent-gold);
+  display: inline-block;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.editorial-title .icon {
+  color: var(--accent-gold);
+  font-size: 1.2rem;
+  display: block;
+  margin-top: -12px;
+}
+
+.editorial-text {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 2;
+  margin-bottom: 2.5rem;
+}
+
+.editorial-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.editorial-grid-3 img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* 2. まずは一輪から */
+.editorial-story {
+  padding: 4rem 1.5rem;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.editorial-story .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.editorial-story .story-title {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--accent-color);
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+}
+.editorial-story .story-title span {
+  display: block;
+  font-size: 1.6rem;
+}
+.editorial-story .story-text {
+  font-size: 0.9rem;
+  line-height: 2.2;
+  margin-bottom: 2rem;
+}
+.editorial-story .visual-area {
+  position: relative;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.editorial-story .visual-area::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 35px; /* Alignment with circles */
+  border-left: 1px dashed var(--accent-color);
+  z-index: 1;
+}
+.editorial-story .visual-area::after {
+  content: "▼";
+  position: absolute;
+  bottom: 23%;
+  left: 31px; /* Triangle center adjustment */
+  color: var(--accent-color);
+  font-size: 10px;
+  z-index: 1;
+}
+.visual-item {
+  position: relative;
+  z-index: 2; /* Keep above line */
+}
+.visual-item.top {
+  align-self: flex-end;
+  width: 82%;
+}
+.visual-item.bottom {
+  align-self: flex-start;
+  width: 82%;
+  margin-top: -15px; /* Slight beautiful overlap */
+}
+.visual-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Elegant round corners */
+  border: 4px solid #fff; /* White frame for clean overlaps */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  display: block;
+}
+.circle-callout {
+  position: absolute;
+  background: rgba(240, 235, 238, 0.95);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--sales-purple);
+  font-size: 0.85rem;
+  font-weight: bold; /* Make text clearer */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 3;
+  line-height: 1.4;
+  border: 1px solid rgba(255,255,255,0.6); /* Soft inner glow effect */
+}
+.circle-callout.small {
+  width: 90px;
+  height: 90px;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+}
+.circle-callout.large {
+  width: 105px;
+  height: 105px;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+.editorial-box {
+  border: 1px solid var(--accent-gold);
+  background: #FAFAFA;
+  padding: 1.5rem;
+  position: relative;
+  margin-top: 1.5rem;
+}
+.editorial-box-title {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.editorial-box ul {
+  list-style: none;
+}
+.editorial-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: var(--sales-purple);
+  font-weight: bold;
+}
+.editorial-box ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-gold);
+}
+
+/* 3. 初めての方でも */
+.support-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--section-bg-alt);
+}
+.support-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px; /* Reduced gap for 390px */
+  margin-bottom: 2rem;
+}
+.support-card-wrapper {
+  min-width: 0; /* Prevent grid blowout */
+}
+.support-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+.support-card-title {
+  background: #fff;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px 4px 0 0;
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 0.75rem; /* Smaller font to fit 390px */
+  padding: 0.4rem 0.1rem;
+  margin: 0 4px;
+  transform: translateY(10px);
+  position: relative;
+  z-index: 2;
+  line-height: 1.3;
+  word-break: auto-phrase; /* Helpful for Japanese wrapping */
+}
+.support-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+.support-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px; /* Tighter gap */
+  margin-bottom: 2.5rem;
+}
+.support-icon-item {
+  text-align: center;
+  min-width: 0;
+}
+.support-icon-circle {
+  width: 44px; /* Smaller circle */
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  margin: 0 auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+}
+.support-icon-circle svg {
+  width: 20px;
+  height: 20px;
+}
+.support-icon-item p {
+  font-size: 0.6rem; /* 10px */
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
