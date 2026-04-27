@@ -27,6 +27,14 @@ body {
   line-height: 1.8;
   letter-spacing: 0.05em;
   font-size: 15px; 
+  overflow-wrap: break-word;
+  word-break: auto-phrase;
+  line-break: strict;
+  font-feature-settings: "palt";
+}
+
+.keep-all {
+  white-space: nowrap;
 }
 
 .wrapper {
@@ -103,9 +111,9 @@ section.bg-alt {
   color: #fff;
   text-decoration: none;
   font-family: "Zen Old Mincho", serif;
-  font-size: 1.15rem;
-  letter-spacing: 0.1em;
-  padding: 1.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  padding: 1.2rem 1rem;
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(147, 86, 117, 0.3);
   transition: all 0.4s ease;
@@ -166,7 +174,7 @@ section.bg-alt {
 .note {
   font-size: 0.85rem;
   color: var(--text-light);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* 吹き出し（Speech Bubble） */
@@ -999,4 +1007,40 @@ section.bg-alt {
   font-size: 0.6rem; /* 10px */
   line-height: 1.4;
   letter-spacing: -0.02em;
+}
+
+/* モバイル向け微調整 */
+@media screen and (max-width: 400px) {
+  section {
+    padding: 3.5rem 1.25rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .hero-strong-premium {
+    font-size: 1.35rem;
+    padding: 1.2rem 0.6rem;
+  }
+  .en-title-premium {
+    font-size: 2.5rem;
+  }
+  .editorial-title .main {
+    font-size: 1.4rem;
+  }
+  .fv-catch-premium {
+    font-size: 0.95rem;
+    line-height: 2;
+  }
+  .timeline {
+    margin-left: 5px;
+    padding-left: 15px;
+  }
+  .editorial-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .editorial-grid-3 img {
+    aspect-ratio: 16/9;
+    border-radius: 4px;
+  }
 }
