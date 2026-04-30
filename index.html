@@ -206,7 +206,9 @@
         <div class="support-card-wrapper">
           <div class="support-card-title">スターターキット付き</div>
           <div class="support-card">
-            <img src="images/starter_kit_new.webp" alt="スターターキット写真" loading="lazy">
+            <a href="javascript:void(0);" onclick="openVideoModal(event)" style="display: block;">
+              <img src="images/starter_kit_new.webp" alt="スターターキット写真" loading="lazy">
+            </a>
           </div>
         </div>
         <div class="support-card-wrapper">
@@ -806,7 +808,31 @@
     </footer>
   </div>
 
+  <!-- 動画モーダル -->
+  <div id="video-modal" class="modal-overlay" onclick="closeVideoModal(event)">
+    <div class="modal-content-wrapper">
+      <span class="modal-close" onclick="closeVideoModal(event)">&times;</span>
+      <div class="modal-content">
+        <iframe loading="lazy" title="Gumlet video player"
+          src="https://play.gumlet.io/embed/691fd0de55e54fac094caf0a?background=false&autoplay=false&loop=false&disable_player_controls=false"
+          style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
   <script>
+    function openVideoModal(e) {
+      if(e) e.preventDefault();
+      document.getElementById('video-modal').classList.add('is-active');
+    }
+    function closeVideoModal(e) {
+      if (e.target.id === 'video-modal' || e.target.classList.contains('modal-close')) {
+        document.getElementById('video-modal').classList.remove('is-active');
+      }
+    }
+
     (function () {
       function showSquareCheckout(e) {
         e.preventDefault();
