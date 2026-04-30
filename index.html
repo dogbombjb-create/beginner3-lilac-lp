@@ -830,6 +830,12 @@
     function closeVideoModal(e) {
       if (e.target.id === 'video-modal' || e.target.classList.contains('modal-close')) {
         document.getElementById('video-modal').classList.remove('is-active');
+        const iframe = document.querySelector('#video-modal iframe');
+        if (iframe) {
+          const src = iframe.src;
+          iframe.src = '';
+          iframe.src = src;
+        }
       }
     }
 
