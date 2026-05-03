@@ -22,8 +22,8 @@
     document.addEventListener("DOMContentLoaded", () => {
       const faders = document.querySelectorAll('.fade-in');
       const appearOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.1,
+        rootMargin: "0px 0px -30px 0px"
       };
       const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
@@ -39,7 +39,7 @@
     });
   </script>
   <!-- Ptengine Tag -->
-  <script src="https://js.ptengine.jp/566z61fy.js"></script>
+  <script src="https://js.ptengine.jp/566z61fy.js" defer></script>
   <!-- End Ptengine Tag -->
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
@@ -247,7 +247,7 @@
         <div class="support-card-wrapper">
           <div class="support-card-title">スターターキット付き</div>
           <div class="support-card">
-            <a href="javascript:void(0);" onclick="openVideoModal(event)" style="display: block;">
+            <a href="javascript:void(0);" onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true)" style="display: block; position: relative;">
               <img src="images/starter_kit_new.webp" alt="スターターキット写真" loading="lazy">
             </a>
           </div>
@@ -255,10 +255,13 @@
         <div class="support-card-wrapper">
           <div class="support-card-title">オンラインで丁寧にサポート</div>
           <div class="support-card">
-            <img src="images/instructor_hands_1776662891849.webp" alt="オンラインサポート" loading="lazy">
+            <a href="javascript:void(0);" onclick="openVideoModal(event, '69e740d83e13c773bca689dc', false)" style="display: block; position: relative;">
+              <img src="images/instructor_hands_1776662891849.webp" alt="オンラインサポート" loading="lazy">
+            </a>
           </div>
         </div>
       </div>
+      <p style="text-align: center; font-size: 0.75rem; color: #999; margin-top: -1rem; margin-bottom: 2rem;">※詳細は画像をタップしてご覧ください</p>
 
       <div class="support-icons">
         <div class="support-icon-item">
@@ -446,10 +449,10 @@
         まずは、受講生のダイジェスト動画でご覧ください。
       </p>
 
-      <!-- タップで動画プレーヤーに切り替わる構造 -->
+      <!-- タップで動画モーダルが開く構造に変更 -->
       <div id="student-video-container"
         style="margin-top: 1.5rem; cursor: pointer; position: relative; overflow: hidden;" class="photo-frame"
-        onclick="this.innerHTML='<div style=\'position:relative;aspect-ratio:16/9;\'><iframe loading=\'lazy\' src=\'https://play.gumlet.io/embed/69e740d83e13c773bca689dc?background=false&amp;autoplay=true&amp;loop=false&amp;disable_player_controls=false\' style=\'border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;\' allow=\'autoplay; fullscreen\'></iframe></div>'; this.onclick=null; this.classList.remove('photo-frame'); this.style.padding='0'; this.style.border='none';">
+        onclick="openVideoModal(event, '69e740d83e13c773bca689dc', false)">
         <div style="position: relative;">
           <!-- 指定された差し替え画像 -->
           <img src="images/student_works_grid.webp" alt="受講生ダイジェスト動画" loading="lazy"
@@ -702,11 +705,19 @@
           ▼ 入門講座「ライラック」<br>のご紹介（動画）
         </p>
         <div
-          style="position:relative; aspect-ratio:16/9; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          style="position:relative; aspect-ratio:16/9; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;"
+          onclick="openVideoModal(event, '69ea27808dd5a216e2bbacc1', false)">
+          <!-- 再生ボタン（オーバーレイ） -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1);">
+            <div style="width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="width: 0; height: 0; border-top: 14px solid transparent; border-bottom: 14px solid transparent; border-left: 20px solid #fff; margin-left: 6px;"></div>
+            </div>
+          </div>
+          <!-- Gumletの自動サムネイルを表示させるためにiframeを置きつつ、pointer-events: none でクリックを上に逃がす -->
           <iframe loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/69ea27808dd5a216e2bbacc1?background=false&autoplay=false&loop=false&disable_player_controls=false"
-            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" referrerpolicy="origin"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none;" referrerpolicy="origin"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;" tabindex="-1">
           </iframe>
         </div>
       </div>
@@ -805,11 +816,18 @@
         </p>
         <!-- 縦動画（PCでも大きくなりすぎないようmax-width設定） -->
         <div
-          style="position:relative; aspect-ratio:9/16; max-width: 320px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 25px rgba(92, 65, 77, 0.2);">
+          style="position:relative; aspect-ratio:9/16; max-width: 320px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 25px rgba(92, 65, 77, 0.2); cursor: pointer;"
+          onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true)">
+          <!-- 再生ボタン（オーバーレイ） -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1);">
+            <div style="width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="width: 0; height: 0; border-top: 14px solid transparent; border-bottom: 14px solid transparent; border-left: 20px solid #fff; margin-left: 6px;"></div>
+            </div>
+          </div>
           <iframe loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/691fd0de55e54fac094caf0a?background=false&autoplay=false&loop=false&disable_player_controls=false"
-            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" referrerpolicy="origin"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none;" referrerpolicy="origin"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;" tabindex="-1">
           </iframe>
         </div>
       </div>
@@ -1018,11 +1036,11 @@
 
   <!-- 動画モーダル -->
   <div id="video-modal" class="modal-overlay" onclick="closeVideoModal(event)">
-    <div class="modal-content-wrapper">
+    <div id="modal-wrapper" class="modal-content-wrapper" style="margin: 0 auto; width: 95%;">
       <span class="modal-close" onclick="closeVideoModal(event)">&times;</span>
-      <div class="modal-content">
-        <iframe loading="lazy" title="Gumlet video player"
-          src="https://play.gumlet.io/embed/691fd0de55e54fac094caf0a?background=false&autoplay=false&loop=false&disable_player_controls=false"
+      <div id="modal-content-box" class="modal-content" style="position: relative; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+        <iframe id="modal-iframe" loading="lazy" title="Gumlet video player"
+          src=""
           style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" referrerpolicy="origin"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
         </iframe>
@@ -1031,19 +1049,34 @@
   </div>
 
   <script>
-    function openVideoModal(e) {
+    function openVideoModal(e, gumletId, isVertical) {
       if (e) e.preventDefault();
+      // デフォルトID（スターターキット）
+      const id = gumletId || '691fd0de55e54fac094caf0a';
+      const iframe = document.getElementById('modal-iframe');
+      const wrapper = document.getElementById('modal-wrapper');
+      const content = document.getElementById('modal-content-box');
+      
+      // 比率と最大幅の動的調整
+      if (isVertical) {
+        wrapper.style.maxWidth = '360px'; // 縦動画はスマホの縦に収める
+        content.style.aspectRatio = '9/16';
+      } else {
+        wrapper.style.maxWidth = '800px'; // 横動画は画面いっぱいに大きく
+        content.style.aspectRatio = '16/9';
+      }
+      
+      // 再生用URLをセット (自動再生オン、ミュート解除)
+      iframe.src = 'https://play.gumlet.io/embed/' + id + '?background=false&autoplay=true&loop=false&muted=false&disable_player_controls=false';
+      
       document.getElementById('video-modal').classList.add('is-active');
     }
+    
     function closeVideoModal(e) {
       if (e.target.id === 'video-modal' || e.target.classList.contains('modal-close')) {
         const modal = document.getElementById('video-modal');
         modal.classList.remove('is-active');
-        const iframe = modal.querySelector('iframe');
-        if (iframe) {
-          const clone = iframe.cloneNode(true);
-          iframe.parentNode.replaceChild(clone, iframe);
-        }
+        document.getElementById('modal-iframe').src = ''; // 音声を止めるためにsrcを空にする
       }
     }
 
