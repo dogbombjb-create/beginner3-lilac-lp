@@ -1251,16 +1251,6 @@ section.bg-alt {
     margin-left: 5px;
     padding-left: 15px;
   }
-
-  .editorial-grid-3 {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .editorial-grid-3 img {
-    aspect-ratio: 16/9;
-    border-radius: 4px;
-  }
 }
 
 /* =========================================
@@ -1377,4 +1367,19 @@ section.bg-alt {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
+}
+
+.photo-lightbox-content.is-pair {
+  gap: 8px;
+  align-items: stretch;
+}
+
+.photo-lightbox-content .photo-lightbox-pair-img {
+  max-width: calc(50% - 4px);
+  max-height: 80vh;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }

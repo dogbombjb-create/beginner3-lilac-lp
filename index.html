@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>シュガーフラワー入門講座 - 一輪のライラックから始める</title>
   <meta name="description" content="初めての方でもご参加いただける、一輪のライラックから始めるシュガーフラワーのオンライン入門講座です。上品で洗練された技術をスターターキットとともにお届けします。">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=10">
   <link rel="preload" as="image" href="images/fv_lilac_final.webp">
   <script defer>
     document.addEventListener("DOMContentLoaded", () => {
@@ -295,7 +295,7 @@
           <span style="font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem; display: inline-block; font-family: 'Noto Serif JP', serif;">4つの理由があります。</span>
         </h3>
 
-        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03); position: relative; overflow: visible;">
           <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
               <rect x="2" y="6" width="20" height="12" rx="2"></rect>
@@ -303,38 +303,51 @@
             </svg>
             <span style="line-height: 1.4;">講師が作った、実物の見本が届く</span>
           </p>
-          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 4.2rem; padding-right: 40%;">
             <span class="keep-all">写真でも動画でもなく、</span><span class="keep-all">講師が制作した実物のサンプル花材が、</span><span
               class="keep-all">キットと一緒にご自宅に届きます。</span><br>
             <span class="keep-all">花びらの薄さも重なりも、</span><span class="keep-all">360度、手に取って確かめられます。</span><br>
             <span class="keep-all">目指す完成形が、</span><span class="keep-all">最初から手元にあります。</span>
           </p>
+          <div style="position: absolute; bottom: -20px; right: -12px; width: 34%; aspect-ratio: 4/5; cursor: pointer; z-index: 2;"
+            onclick="openVideoModal(event, '6a4b718b576bf598c9c88e61', true, 'reason_card1')">
+            <img src="images/samplekazai.jpg" alt="実物のサンプル花材（タップで動画再生）" loading="lazy"
+              style="width: 100%; height: 100%; display: block; object-fit: cover; border: 5px solid #fff; border-radius: 4px; box-shadow: 0 8px 20px rgba(99, 76, 122, 0.2); transform: rotate(-3deg); filter: sepia(0.1) saturate(1.3) contrast(1.08) brightness(1.02);">
+            <div
+              style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-3deg); width: 34px; height: 34px; background: rgba(0,0,0,0.55); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(255,255,255,0.85);">
+              <div style="width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #fff; margin-left: 2px;">
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03); position: relative; overflow: visible;">
           <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
               <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path>
             </svg>
             <span style="line-height: 1.4;">販売しているものと同じ、オリジナルペースト</span>
           </p>
-          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 4.2rem; padding-right: 40%;">
             <span class="keep-all">この講座のために開発された</span><span class="keep-all">オリジナルペーストを、</span><span
               class="keep-all">協会で販売しているものと同じ品質で、</span><span class="keep-all">着色済みでお届けします。</span><br>
             <span class="keep-all">乾燥がゆるやかなので焦らず作業でき、</span><span class="keep-all">薄く繊細な花びらも</span><span
               class="keep-all">ゆっくり仕上げられます。</span><br>
             <span class="keep-all">色作りという最初の難関が、</span><span class="keep-all">そもそもありません。</span>
           </p>
+          <img src="images/IMG_E2828_compressed.jpg" alt="オリジナルペースト" loading="lazy" class="lightbox-trigger"
+            data-photo-group="reason_paste" onclick="openPhotoLightbox('reason_paste', 0)"
+            style="position: absolute; bottom: -20px; right: -12px; width: 34%; aspect-ratio: 4/5; object-fit: cover; border: 5px solid #fff; border-radius: 4px; box-shadow: 0 8px 20px rgba(99, 76, 122, 0.2); transform: rotate(-3deg); z-index: 2; filter: sepia(0.1) saturate(1.3) contrast(1.08) brightness(1.02);">
         </div>
 
-        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03); position: relative; overflow: visible;">
           <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
               <polygon points="5 3 19 12 5 21 5 3" style="fill: none;"></polygon>
             </svg>
             <span style="line-height: 1.4;">感覚に頼らない、測れる判断基準</span>
           </p>
-          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 5.5rem; padding-right: 46%;">
             <span class="keep-all">「これくらいの量で」</span><span class="keep-all">「指先ほど」という</span><span
               class="keep-all">曖昧な指示はありません。</span><br>
             <span class="keep-all">ペーストの量はカラースケールで測り、</span><span class="keep-all">寸法はノギスで確かめる。</span><br>
@@ -342,6 +355,12 @@
               class="keep-all">オンラインでも判断がブレません。</span><br>
             <span class="keep-all">講師と同じ薄さ、</span><span class="keep-all">同じ形に近づける仕組みです。</span>
           </p>
+          <img src="images/IMG_E2832_compressed.jpg" alt="道具キットの内容" loading="lazy" class="lightbox-trigger"
+            data-photo-group="reason_criteria" onclick="openPhotoLightbox('reason_criteria', 0)"
+            style="position: absolute; bottom: -14px; right: 14%; width: 30%; aspect-ratio: 4/5; object-fit: cover; border: 5px solid #fff; border-radius: 4px; box-shadow: 0 6px 16px rgba(99, 76, 122, 0.18); transform: rotate(5deg); z-index: 1; filter: sepia(0.1) saturate(1.3) contrast(1.08) brightness(1.02);">
+          <img src="images/IMG_E2831_compressed.jpg" alt="カラースケールとノギス" loading="lazy" class="lightbox-trigger"
+            data-photo-group="reason_criteria" onclick="openPhotoLightbox('reason_criteria', 1)"
+            style="position: absolute; bottom: -22px; right: -12px; width: 32%; aspect-ratio: 4/5; object-fit: cover; border: 5px solid #fff; border-radius: 4px; box-shadow: 0 8px 20px rgba(99, 76, 122, 0.2); transform: rotate(-4deg); z-index: 2; filter: sepia(0.1) saturate(1.3) contrast(1.08) brightness(1.02);">
         </div>
 
         <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
@@ -503,7 +522,7 @@
         <h2 class="section-title" style="margin-top: 1rem; font-size: 1.2rem;">指導は、実績と経験のある<br>講師が行います</h2>
 
         <div style="margin-bottom: 2rem;">
-          <img src="images/instructor_profile_new.webp" alt="平川かなえ講師" class="photo-frame"
+          <img src="images/繝帙ｚ繝ｼ繝医Ξ繝ｼ繝・DSC_5844.50pct.light.webp" alt="平川かなえ講師" class="photo-frame"
             style="border-radius: 50%; width: 100%; max-width: 220px; aspect-ratio: 1/1; object-fit: cover; margin: 0 auto; display: block; box-shadow: 0 10px 30px rgba(99, 76, 122, 0.15);"
             loading="lazy">
         </div>
@@ -986,15 +1005,34 @@
         (lightboxIndex + 1) + ' / ' + lightboxImages.length;
     }
 
+    function renderPhotoLightbox() {
+      const content = document.querySelector('.photo-lightbox-content');
+      const dots = document.getElementById('photo-lightbox-dots');
+      if (lightboxImages.length === 2) {
+        // 2枚は横並びで同時表示
+        content.innerHTML = lightboxImages.map(function (el) {
+          return '<img src="' + el.getAttribute('src') + '" alt="' + (el.getAttribute('alt') || '') + '" class="photo-lightbox-pair-img">';
+        }).join('');
+        content.classList.add('is-pair');
+        dots.textContent = '';
+      } else {
+        content.classList.remove('is-pair');
+        content.innerHTML = '<span class="photo-lightbox-nav photo-lightbox-prev" onclick="event.stopPropagation(); navPhotoLightbox(-1)">&#8249;</span>' +
+          '<img id="photo-lightbox-img" src="" alt="">' +
+          '<span class="photo-lightbox-nav photo-lightbox-next" onclick="event.stopPropagation(); navPhotoLightbox(1)">&#8250;</span>';
+        updateLightboxImage();
+      }
+    }
+
     function openPhotoLightbox(group, index) {
       lightboxImages = [...document.querySelectorAll('[data-photo-group="' + group + '"]')];
       lightboxIndex = index;
-      updateLightboxImage();
+      renderPhotoLightbox();
       document.getElementById('photo-lightbox').classList.add('is-active');
     }
 
     function navPhotoLightbox(dir) {
-      if (!lightboxImages.length) return;
+      if (!lightboxImages.length || lightboxImages.length === 2) return;
       lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
       updateLightboxImage();
     }
