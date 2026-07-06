@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>シュガーフラワー入門講座 - 一輪のライラックから始める</title>
   <meta name="description" content="初めての方でもご参加いただける、一輪のライラックから始めるシュガーフラワーのオンライン入門講座です。上品で洗練された技術をスターターキットとともにお届けします。">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=7">
   <link rel="preload" as="image" href="images/fv_lilac_final.webp">
   <script defer>
     document.addEventListener("DOMContentLoaded", () => {
@@ -70,43 +70,73 @@
         <span class="en-title-premium">Lilac<br>Sugarflower<br>Lesson</span>
 
         <h1 class="fv-catch-premium">
-          <span class="keep-all"
-            style="font-size: 0.85em; opacity: 0.9; margin-bottom: 0.5rem; display: block;">家族の節目や、大切な人の記念日に。</span>
-          <span class="keep-all">既製品ではなく、</span><br>
-          <span class="hero-strong-premium">
-            <span class="keep-all">自分の手で作った上品な花で</span><br><span class="keep-all">想いを届けたい方へ</span>
-          </span>
+          <span class="hero-strong-premium" onclick="scrollToFvVideo('headline')">
+            <span class="keep-all">「これ、私が作ったの?」</span>
+          </span><br>
+          <span class="keep-all">完成した瞬間、</span><span class="keep-all">思わずこぼれた言葉です</span>
         </h1>
 
-        <p class="fv-sub-premium">
-          <span class="keep-all">スターターキット付き。</span><br>
-          <span class="keep-all">大人のためのシュガーフラワー入門講座</span><br>
-          <span class="keep-all">初めての方でも、一輪のライラック制作から。</span>
-        </p>
+        <p class="fv-guide-text keep-all" onclick="scrollToFvVideo('lead_text')">その記録を、30秒だけご覧ください</p>
+        <div class="fv-guide-arrow" onclick="scrollToFvVideo('arrow')"></div>
 
-        <div class="fv-cta-wrapper-premium">
-          <p
-            style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-bottom: 0.8rem; text-shadow: 0 1px 3px rgba(0,0,0,0.5); line-height: 1.6;">
-            <span class="keep-all">日程や受講前のご不安がある方は、</span><br>
-            <span class="keep-all">LINEでご確認いただけます</span>
-          </p>
-          <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav" target="_blank"
-            rel="noopener noreferrer" class="btn-cta" style="font-size: 1.05rem;">公式LINEで詳細を確認する</a>
+      </div>
+    </header>
+
+    <!-- ダイジェスト動画+補足情報（v1指示書 作業2・3で移動） -->
+    <section id="fv-video-section" style="padding-top: 1rem; padding-bottom: 1rem; background: var(--bg-color);">
+      <div id="student-video-container"
+        style="margin-top: 0; cursor: pointer; position: relative; overflow: hidden;" class="photo-frame"
+        onclick="openVideoModal(event, '6a4b561642354e9748b05e9f', false, 'fv')">
+        <div style="position: relative;">
+          <img src="images/samunail.jpg" alt="受講生が完成させたシュガーフラワーのブーケ（動画）" loading="lazy"
+            style="width: 100%; vertical-align: bottom;">
           <div
-            style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(255,255,255,0.3);">
-            <p class="note"
-              style="color: rgba(255,255,255,0.9); margin-bottom: 0.8rem; line-height: 1.6; text-shadow: 0 1px 3px rgba(0,0,0,0.5); font-size: 0.85rem;">
-              ※オンライン受講・少人数サポート<br>税込7,980円<br>
-            </p>
-            <a data-square-url="https://square.link/u/TN9k2p7C?src=embd" href="https://square.link/u/TN9k2p7C?src=embed"
-              target="_blank" class="square-checkout-btn"
-              style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1.5rem; font-size: 0.8rem; color: #fff; border: 1px solid rgba(255,255,255,0.5); border-radius: 30px; text-decoration: none; background: rgba(0,0,0,0.15); backdrop-filter: blur(2px);">
-              すぐにお申し込みの方はこちら <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
-            </a>
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <div
+              style="width: 0; height: 0; border-top: 14px solid transparent; border-bottom: 14px solid transparent; border-left: 20px solid #fff; margin-left: 6px;">
+            </div>
           </div>
         </div>
       </div>
-    </header>
+
+      <p class="note text-center" style="margin-top: 1rem;">
+        <span class="keep-all">※動画のブーケは、</span><span class="keep-all">本講座「シュガーフラワービギナー講座」で</span><br>
+        <span class="keep-all">受講生が完成させた作品です。</span><br>
+        <span class="keep-all">7/24の体験レッスンでは、</span><span class="keep-all">このブーケの一輪目——</span><span
+          class="keep-all">ライラックを作ります。</span><br>
+        <span class="keep-all">半数以上が、シュガーフラワー未経験から</span><br>
+        <span class="keep-all">始めています。</span>
+      </p>
+
+      <p class="fv-sub-premium" style="color: var(--text-main); text-shadow: none; margin-top: 2rem;">
+        <span class="keep-all">ライラック一輪から始める、</span><span class="keep-all">シュガーフラワー体験レッスン。</span><br>
+        <span class="keep-all">必要な道具は、すべてスターターキットで</span><span class="keep-all">ご自宅に届きます。</span>
+      </p>
+
+      <div class="fv-cta-wrapper-premium" style="margin: 0 auto;">
+        <p
+          style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.8rem; line-height: 1.6;">
+          <span class="keep-all">7月24日（金）</span> <span class="keep-all">10:00〜13:00｜オンライン</span><br>
+          <span class="keep-all">税込7,980円</span><br>
+          <span class="keep-all">初めての方のためのレッスンです。</span>
+        </p>
+        <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav" target="_blank"
+          rel="noopener noreferrer" class="btn-cta" style="font-size: 1.05rem;">LINEで申込案内を受け取る</a>
+        <div
+          style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(99, 76, 122, 0.2);">
+          <a href="https://mosh.jp/services/15dcdb03bd9f46a4a2bcf18ca873f662"
+            target="_blank" rel="noopener noreferrer"
+            style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1.5rem; font-size: 0.8rem; color: var(--text-main); border: 1px solid rgba(99,76,122,0.3); border-radius: 30px; text-decoration: none; background: #fff;">
+            今すぐお申し込みの方はこちら <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
+          </a>
+          <p class="note"
+            style="margin-top: 0.8rem; margin-bottom: 0; line-height: 1.6; font-size: 0.85rem;">
+            申込締切：7月18日（土）<br>
+            ※体験後に本講座へ進まれる場合は、<br>今回の受講料を本講座受講料から割引します。
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- 写真スライドカルーセル（FVとの境目に配置） -->
     <div class="marquee-wrapper">
@@ -137,42 +167,33 @@
       </div>
     </div>
 
-    <!-- FV直下のインフォボックス（フルスクリーンデザインの邪魔にならないようFV領域から出して配置） -->
-    <section style="padding-top: 1rem; padding-bottom: 1rem; background: var(--bg-color);">
-      <div class="info-box note"
-        style="margin-top: 0; box-shadow:none; border-top:none; border-left:none; border-right:none;">
-        <span class="keep-all">※オンライン受講です。</span><br>
-        <span class="keep-all">※入門講座受講後に本講座へ進まれる場合は、</span><span class="keep-all">今回の受講料を本講座受講料から</span><span
-          class="keep-all">割引いたします。</span><br><br>
-        <strong style="color:var(--text-main);">「開催日程」</strong><br>
-        <span class="keep-all">5月22日（金）10:00〜13:00 ／</span><br><span class="keep-all">5月23日（土）10:00〜13:00</span><br>
-        <span class="keep-all">ライラック制作／各回3時間</span>
-      </div>
-    </section>
-
     <!-- 02. 利用シーンの提示 (エディトリアル) -->
     <section class="fade-in editorial-section">
       <div class="editorial-title">
-        <span class="sub">この講座は、</span>
-        <span class="main"><span style="display:inline-block">こんな方のための</span><span
-            style="display:inline-block">入口です</span></span>
+        <span class="sub">花束は、</span>
+        <span class="main"><span style="display:inline-block">もらうものだと</span><span
+            style="display:inline-block">思っていた。</span></span>
         <span class="icon">❖</span>
       </div>
 
       <p class="editorial-text">
-        <span class="keep-all">大切な日に、</span><span class="keep-all">気持ちを込めたものを</span><span
-          class="keep-all">贈りたい。</span><br>
-        <span class="keep-all">でも、相手に負担なく、</span><span class="keep-all">美しく、</span><span
-          class="keep-all">想いが伝わるものを</span><span class="keep-all">選びたい。</span><br>
-        <span class="keep-all">そんな繊細な感覚を</span><span class="keep-all">持つ方のために</span><span class="keep-all">作りました。</span>
+        <span class="keep-all">美しい花を見て</span><span class="keep-all">「いいなあ」と思う。</span><br>
+        <span class="keep-all">それで終わるのが、</span><span class="keep-all">いつものことでした。</span><br><br>
+        <span class="keep-all">この花は、砂糖でできています。</span><br>
+        <span class="keep-all">一枚ずつ花びらを作り、色を入れ、</span><span class="keep-all">房にまとめたものです。</span><br><br>
+        <span class="keep-all">見る側から、つくる側へ。</span><br>
+        <span class="keep-all">その最初の一輪が、ライラックです。</span>
       </p>
 
       <div class="editorial-grid-3">
-        <img src="images/gift_scene_1776662834380.webp" alt="プレゼントの箱" loading="lazy"
+        <img src="images/lilac_vase_new1.jpg" alt="花瓶に活けたライラック" loading="lazy" class="lightbox-trigger"
+          data-photo-group="editorial1" onclick="openPhotoLightbox('editorial1', 0)"
           style="aspect-ratio: 4/3 !important; object-fit: cover; filter: sepia(0.15) contrast(0.95) brightness(1.02);">
-        <img src="images/instructor_hands_1776662891849.webp" alt="メッセージカード" loading="lazy"
+        <img src="images/lilac_standing_new3.jpg" alt="ライラックの枝" loading="lazy" class="lightbox-trigger"
+          data-photo-group="editorial1" onclick="openPhotoLightbox('editorial1', 1)"
           style="aspect-ratio: 4/3 !important; object-fit: cover; filter: sepia(0.15) contrast(0.95) brightness(1.02);">
-        <img src="images/ri-suyo.webp" alt="ライラックのブーケ" loading="lazy"
+        <img src="images/seihoukeiライラック-2_compressed.jpg" alt="ライラックのブーケ" loading="lazy" class="lightbox-trigger"
+          data-photo-group="editorial1" onclick="openPhotoLightbox('editorial1', 2)"
           style="aspect-ratio: 4/3 !important; object-fit: cover; filter: sepia(0.15) contrast(0.95) brightness(1.02);">
       </div>
     </section>
@@ -221,14 +242,11 @@
           </p>
 
           <div class="editorial-box">
-            <p class="editorial-box-title">その先にある</p>
-            <ul>
-              <li>束ねること</li>
-              <li>整えること</li>
-              <li>贈れる形に仕上げること</li>
-            </ul>
-            <p class="story-text" style="margin-top: 1rem; margin-bottom: 0;">
-              へ進むための、きちんとした入口です。
+            <p class="story-text" style="margin-top: 0; margin-bottom: 0;">
+              <span class="keep-all">一輪を作る技術の先に、</span><span class="keep-all">束ねる技術があります。</span><br>
+              <span class="keep-all">花の向き、高さ、間隔、</span><span class="keep-all">色のつながり——</span><br>
+              <span class="keep-all">整えて初めて、</span><span class="keep-all">一つの作品になります。</span><br><br>
+              <span class="keep-all">この入門講座は、そこへ進むための、</span><span class="keep-all">きちんとした入口です。</span>
             </p>
           </div>
         </div>
@@ -238,16 +256,22 @@
     <!-- 04. 初心者へのサポート (エディトリアル) -->
     <section class="fade-in support-section">
       <div class="editorial-title">
-        <span class="sub">初めての方でも始めやすいように、</span>
-        <span class="main">入口から整えています</span>
+        <span class="sub">「不器用だから無理」</span>
+        <span class="main">ではありません。</span>
         <span class="icon">❖</span>
       </div>
+
+      <p class="editorial-text" style="margin-bottom: 2.5rem;">
+        <span class="keep-all">初心者がつまずく原因は、</span><span class="keep-all">器用さではありません。</span><br>
+        <span class="keep-all">見本・素材・判断基準・伴走。</span><span class="keep-all">この4つが揃っていないことです。</span><br>
+        <span class="keep-all">このレッスンでは、</span><span class="keep-all">4つすべてを用意しています。</span>
+      </p>
 
       <div class="support-cards">
         <div class="support-card-wrapper">
           <div class="support-card-title">スターターキット付き</div>
           <div class="support-card">
-            <a href="javascript:void(0);" onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true)" style="display: block; position: relative;">
+            <a href="javascript:void(0);" onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true, 'support_kit')" style="display: block; position: relative;">
               <img src="images/starter_kit_new.webp" alt="スターターキット写真" loading="lazy">
             </a>
           </div>
@@ -255,90 +279,84 @@
         <div class="support-card-wrapper">
           <div class="support-card-title">オンラインで丁寧にサポート</div>
           <div class="support-card">
-            <a href="javascript:void(0);" onclick="openVideoModal(event, '69e740d83e13c773bca689dc', false)" style="display: block; position: relative;">
-              <img src="images/instructor_hands_1776662891849.webp" alt="オンラインサポート" loading="lazy">
+            <a href="javascript:void(0);" onclick="openVideoModal(event, '69ecc81a4779ed7c8b653496', false, 'support_online')" style="display: block; position: relative;">
+              <img src="images/lessonhuukei.jpg" alt="オンラインサポート" loading="lazy">
             </a>
           </div>
         </div>
       </div>
       <p style="text-align: center; font-size: 0.75rem; color: #999; margin-top: -1rem; margin-bottom: 2rem;">※詳細は画像をタップしてご覧ください</p>
 
-      <div class="support-icons">
-        <div class="support-icon-item">
-          <div class="support-icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M11 20A7 7 0 014 13c0-3 2-6 5-8a8 8 0 018 0c3 2 5 5 5 8a7 7 0 01-7 7H11z" />
-              <path d="M11 20v4M11 13a4 4 0 014-4" />
-            </svg>
-          </div>
-          <p>初心者向けの<br>オリジナルペースト</p>
-        </div>
-        <div class="support-icon-item">
-          <div class="support-icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-              <line x1="12" y1="22.08" x2="12" y2="12" />
-            </svg>
-          </div>
-          <p>ワイヤーや道具も<br>キットに</p>
-        </div>
-        <div class="support-icon-item">
-          <div class="support-icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-          </div>
-          <p>録画視聴付きで<br>何度も見返せる</p>
-        </div>
-        <div class="support-icon-item">
-          <div class="support-icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
-            </svg>
-          </div>
-          <p>質問はチャットや<br>LINEでサポート</p>
-        </div>
-      </div>
-
-
-      <!-- 2つの理由（画像追加分） -->
+      <!-- 4つの理由（既存カードUI流用） -->
       <div style="margin: 4rem 0 3rem;">
         <h3 class="text-center" style="font-weight: normal; line-height: 1.8; margin-bottom: 2rem; color: #634C7A;">
           <span style="font-size: 1.05rem;" class="keep-all">初めての方でも、美しい</span><br>
           <span style="font-size: 1.05rem;" class="keep-all">繊細な仕上がりが叶う</span><br>
-          <span style="font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem; display: inline-block; font-family: 'Noto Serif JP', serif;">2つの理由があります。</span>
+          <span style="font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem; display: inline-block; font-family: 'Noto Serif JP', serif;">4つの理由があります。</span>
         </h3>
+
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+          <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
+              <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+              <path d="M6 6v4M10 6v2M14 6v4M18 6v2"></path>
+            </svg>
+            <span style="line-height: 1.4;">講師が作った、実物の見本が届く</span>
+          </p>
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+            <span class="keep-all">写真でも動画でもなく、</span><span class="keep-all">講師が制作した実物のサンプル花材が、</span><span
+              class="keep-all">キットと一緒にご自宅に届きます。</span><br>
+            <span class="keep-all">花びらの薄さも重なりも、</span><span class="keep-all">360度、手に取って確かめられます。</span><br>
+            <span class="keep-all">目指す完成形が、</span><span class="keep-all">最初から手元にあります。</span>
+          </p>
+        </div>
 
         <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
           <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
               <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path>
             </svg>
-            <span style="line-height: 1.4;">焦らず作れる独自ペースト</span>
+            <span style="line-height: 1.4;">販売しているものと同じ、オリジナルペースト</span>
           </p>
           <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
-            <span class="keep-all">一般的なペーストは乾燥が早く</span><span class="keep-all">焦ってしまいがちですが、</span><br>
-            <span class="keep-all">当講座では独自開発の</span><span class="keep-all">オリジナルペーストを使用。</span><br><br>
-            <span class="keep-all">乾燥を防ぎながらゆっくりと</span><span class="keep-all">丁寧に作業できるため、</span><br>
-            <span class="keep-all">初めてでも完成度が格段に上がります。</span>
+            <span class="keep-all">この講座のために開発された</span><span class="keep-all">オリジナルペーストを、</span><span
+              class="keep-all">協会で販売しているものと同じ品質で、</span><span class="keep-all">着色済みでお届けします。</span><br>
+            <span class="keep-all">乾燥がゆるやかなので焦らず作業でき、</span><span class="keep-all">薄く繊細な花びらも</span><span
+              class="keep-all">ゆっくり仕上げられます。</span><br>
+            <span class="keep-all">色作りという最初の難関が、</span><span class="keep-all">そもそもありません。</span>
+          </p>
+        </div>
+
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+          <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
+              <polygon points="5 3 19 12 5 21 5 3" style="fill: none;"></polygon>
+            </svg>
+            <span style="line-height: 1.4;">感覚に頼らない、測れる判断基準</span>
+          </p>
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+            <span class="keep-all">「これくらいの量で」</span><span class="keep-all">「指先ほど」という</span><span
+              class="keep-all">曖昧な指示はありません。</span><br>
+            <span class="keep-all">ペーストの量はカラースケールで測り、</span><span class="keep-all">寸法はノギスで確かめる。</span><br>
+            <span class="keep-all">工程ごとに「正しい状態」を</span><span class="keep-all">数字と道具で確認できるので、</span><span
+              class="keep-all">オンラインでも判断がブレません。</span><br>
+            <span class="keep-all">講師と同じ薄さ、</span><span class="keep-all">同じ形に近づける仕組みです。</span>
           </p>
         </div>
 
         <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
           <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; font-family: 'Noto Serif JP', serif;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CBAEBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;">
-              <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-              <path d="M6 6v4M10 6v2M14 6v4M18 6v2"></path>
+              <path
+                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
             </svg>
-            <span style="line-height: 1.4;">独自の工夫を取り入れた専用道具</span>
+            <span style="line-height: 1.4;">オンラインだから、講師の手元が大きく見える</span>
           </p>
           <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
-            <span class="keep-all">大工が使うノギスや細かな計測用スケール、</span><span class="keep-all">メイク道具の筆など、</span><br>
-            <span class="keep-all">初心者が直感的に扱いやすく、</span><span class="keep-all">失敗しにくい道具を</span><br>
-            <span class="keep-all">独自のカリキュラムとして</span><span class="keep-all">工夫して取り入れています。</span>
+            <span class="keep-all">対面の教室では遠くからしか</span><span class="keep-all">見えない手元が、</span><span
+              class="keep-all">画面いっぱいに映ります。</span><br>
+            <span class="keep-all">あなたの手元も講師が確認しながら</span><span class="keep-all">進むので、</span><span
+              class="keep-all">疑問はその場で解決します。</span>
           </p>
         </div>
       </div>
@@ -359,7 +377,7 @@
         <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav" target="_blank"
           rel="noopener noreferrer"
           style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1.5rem; font-size: 0.8rem; color: #634C7A; border: 1px solid rgba(99,76,122,0.3); border-radius: 30px; text-decoration: none; background: #fff;">
-          受講前にLINEで確認する <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
+          LINEで申込案内を受け取る <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
         </a>
       </div>
     </section>
@@ -372,29 +390,32 @@
         <h2 class="section-title text-highlight"
           style="margin-bottom: 1rem; color: var(--sales-purple); font-size:1.3rem;">入門講座のステップ</h2>
         <p class="text-center note" style="margin-bottom: 2rem;">
-          約3時間のレッスンで、<br>ライラック一房と葉を仕上げていきます。
+          <span class="keep-all">約3時間で、蕾8輪と花8輪——</span><br><span class="keep-all">16のパーツを作り、</span><span
+            class="keep-all">一房のライラックに仕上げます。</span>
         </p>
 
         <div class="timeline">
           <div class="timeline-step">
-            <h4>イメージの確認</h4>
-            <p class="note"><span class="keep-all">最初に、レッスン全体の流れと</span><span class="keep-all">完成イメージを確認します。</span></p>
+            <h4>はじめに（15分）</h4>
+            <p class="note"><span class="keep-all">完成形と全体の流れを</span><span class="keep-all">最初に確認します。</span><br>
+              <span class="keep-all">どこへ向かうかを知ってから、</span><span class="keep-all">手を動かし始めます。</span></p>
           </div>
           <div class="timeline-step">
-            <h4>基本の形づくり</h4>
-            <p class="note"><span class="keep-all">ペーストを整えながら基本の形を作り、</span><span
-                class="keep-all">花びらの表情をつけていきます。</span></p>
+            <h4>蕾と花をつくる（約105分）</h4>
+            <p class="note"><span class="keep-all">ペーストを整え、花びらに表情をつけ、</span><span
+                class="keep-all">ワイヤーを通して一輪ずつ仕上げます。</span><br>
+              <span class="keep-all">蕾8輪、花8輪。</span><span class="keep-all">講師のデモを見て、</span><span
+                class="keep-all">手元の確認を受けながら進みます。</span></p>
           </div>
           <div class="timeline-step">
-            <h4>房の成形と葉の制作</h4>
-            <p class="note"><span class="keep-all">ワイヤーを通して一輪のお花に仕上げたあと、</span><span
-                class="keep-all">花やつぼみをまとめながら</span><span class="keep-all">ライラックらしい房の形まで整えます。</span><span
-                class="keep-all">そして、お花を際立たせる</span><span class="keep-all">葉っぱの成型を行います。</span></p>
+            <h4>房に組む（30分）</h4>
+            <p class="note"><span class="keep-all">16のパーツを束ね、</span><span
+                class="keep-all">ライラックらしい房のふくらみに</span><span class="keep-all">整えていきます。</span></p>
           </div>
           <div class="timeline-step">
-            <h4>仕上げ</h4>
-            <p class="note"><span class="keep-all">全体を確認しながら、</span><span class="keep-all">より美しく見せるための</span><span
-                class="keep-all">フィードバックを行います。</span></p>
+            <h4>葉と仕上げ（30分）</h4>
+            <p class="note"><span class="keep-all">お花を際立たせる葉を作り、</span><span
+                class="keep-all">最後に全体を見ながら</span><span class="keep-all">フィードバックを受けます。</span></p>
           </div>
         </div>
       </div>
@@ -405,9 +426,10 @@
       <h2 class="section-title" style="padding: 0 1rem;"><span class="keep-all">この入門講座で</span><span
           class="keep-all">大切にしていること</span></h2>
       <p class="text-center" style="line-height: 2; margin-bottom: 0.5rem; padding: 0 1rem;">
-        <span class="keep-all">この講座で学ぶのは、</span><span class="keep-all">ただ可愛いものを</span><span
-          class="keep-all">作るための</span><span class="keep-all">単発体験ではありません。</span><br><br>
-        <span style="font-size: 1.1rem; color: var(--sales-purple); font-weight: bold;">しかも、</span>
+        <span class="keep-all">一輪を作ることと、</span><span class="keep-all">ブーケに仕上げることは、</span><span
+          class="keep-all">別の技術です。</span><br><br>
+        <span class="keep-all">バランス、向き、高さ、</span><span class="keep-all">花同士の間隔——</span><br>
+        <span class="keep-all">束ねて初めて、</span><span style="font-size: 1.1rem; color: var(--sales-purple); font-weight: bold;" class="keep-all">一つの作品になります。</span>
       </p>
 
       <!-- 文章の代替画像 (上下をマスクで馴染ませて自然な流れを作る) -->
@@ -427,9 +449,8 @@
     <!-- 05.5. 受講生の実績 -->
     <section class="fade-in" style="padding-top: 4rem; padding-bottom: 4rem;">
       <h2 class="section-title">
-        <span class="keep-all">この入門講座の先で、</span><br>
-        <span class="keep-all">実際にこんな変化が</span><br>
-        <span class="keep-all">起きています</span>
+        <span class="keep-all">もし「もっと作ってみたい」</span><br>
+        <span class="keep-all">と感じたら</span>
       </h2>
 
       <!-- コンセプトをカード化して女性らしく・読みやすく -->
@@ -442,28 +463,11 @@
 
         <p class="text-center" style="line-height: 2.4; color: #444; margin-bottom: 0;">
           <span class="keep-all"
-            style="font-weight: 700; color: #634C7A; font-size: 1.1rem; border-bottom: 1px solid #E1D3DC; display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
-            まずは、一輪のライラックを<br>自分の手で仕上げること。
-          </span><br>
-
-          <span class="keep-all">この入門講座では、その小さな</span><br>
+            style="font-size: 0.95rem; color: #736E6E; letter-spacing: 0.02em;">その先に、</span><br>
           <span class="keep-all"
-            style="background: linear-gradient(transparent 60%, #FDE9ED 60%); font-weight: bold;">達成感を大切にしています。</span><br><br>
-
-          <span class="keep-all">一輪で終わっても、もちろん大丈夫です。</span><br>
-          <span class="keep-all">大切な人への贈り物に、既製品ではない</span><br>
-          <span class="keep-all">「気持ち」を添えられる。</span><br>
-          <span class="keep-all">それだけでも、十分に価値のある体験です。</span><br><br>
-
-          <!-- 洗練された区切り線 -->
-          <span style="display: block; width: 40px; height: 1px; background: #E1D3DC; margin: 1.5rem auto;"></span>
-
+            style="background: linear-gradient(transparent 60%, #FDE9ED 60%); font-weight: bold;">全4回でブーケの完成を目指す</span><br>
           <span class="keep-all"
-            style="font-size: 0.95rem; color: #736E6E; letter-spacing: 0.02em;">そして、もし『もっと作ってみたい』と</span><br>
-          <span class="keep-all"
-            style="font-size: 0.95rem; color: #736E6E; letter-spacing: 0.02em;">感じられた方には、その先に</span><br>
-          <span class="keep-all"
-            style="font-size: 0.95rem; color: #736E6E; letter-spacing: 0.02em;">ブーケづくりまで学べる本講座があります。</span>
+            style="background: linear-gradient(transparent 60%, #FDE9ED 60%); font-weight: bold;">本講座があります。</span>
         </p>
       </div>
 
@@ -476,223 +480,20 @@
       </div>
 
       <div class="quote-bubble note" style="border: 2px solid var(--accent-color); font-weight: bold;">
-        「娘の結婚式のために学びたかった」
+        「これ、私が作ったの？」
       </div>
       <div class="quote-bubble note" style="border: 2px solid var(--sales-purple); font-weight: bold;">
-        「ただ可愛いだけではなく、きちんと技術として身についた」
+        「娘の結婚式のために学びたかった」
       </div>
       <div class="quote-bubble note" style="border: 2px solid var(--accent-color); font-weight: bold;">
-        「一輪ではなく、贈れる形まで整えられるようになった」
+        届いた実物見本の大きさに驚く方も。<br>「サンプルが一番大きかった」
       </div>
 
-      <p class="text-center note" style="margin-top: 2rem;">
-        まずは、受講生のダイジェスト動画でご覧ください。
+      <p class="note text-center" style="margin-top: 2rem; color: #999;">
+        <span class="keep-all">ビギナー講座の受講生は約40名。</span><br>
+        <span class="keep-all">半数以上が、シュガーフラワーは</span><span class="keep-all">初めてという方です。</span><br>
+        <span class="keep-all">そのほとんどが、ブーケの完成まで</span><span class="keep-all">たどり着いています。</span>
       </p>
-
-      <!-- タップで動画モーダルが開く構造に変更 -->
-      <div id="student-video-container"
-        style="margin-top: 1.5rem; cursor: pointer; position: relative; overflow: hidden;" class="photo-frame"
-        onclick="openVideoModal(event, '69e740d83e13c773bca689dc', false)">
-        <div style="position: relative;">
-          <!-- 指定された差し替え画像 -->
-          <img src="images/student_works_grid.webp" alt="受講生ダイジェスト動画" loading="lazy"
-            style="width: 100%; vertical-align: bottom;">
-          <!-- 再生ボタン（オーバーレイ） -->
-          <div
-            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-            <!-- 再生の三角形 -->
-            <div
-              style="width: 0; height: 0; border-top: 14px solid transparent; border-bottom: 14px solid transparent; border-left: 20px solid #fff; margin-left: 6px;">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p class="note text-center" style="margin-top: 1rem; color: #999;">
-        ※シュガーフラワービギナー講座<br>受講生のお声です。<br>
-        最初は不安だった方が、<br>手厚いサポートの中で楽しみに<br>変わっていったことや、<br>技術として身につく実感を感じて<br>いただけると思います。
-      </p>
-    </section>
-
-    <!-- 06. 特別な日との相性 -->
-    <!-- 06. 特別な日との相性 (エディトリアル再構築版) -->
-    <section class="fade-in" style="padding: 4rem 1.5rem; background-color: #FDFBFA;">
-      <style>
-        .theme-purple {
-          color: #634C7A;
-        }
-
-        .theme-serif {
-          font-family: "Noto Serif JP", serif;
-        }
-
-        .elegant-divider {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 2.5rem 0;
-          color: #CBAEBD;
-          font-size: 1.2rem;
-        }
-
-        .elegant-divider::before,
-        .elegant-divider::after {
-          content: '';
-          flex: 1;
-          height: 1px;
-          background: linear-gradient(90deg, transparent, #E1D3DC, transparent);
-          margin: 0 15px;
-        }
-
-        .elegant-card {
-          background: #fff;
-          border-radius: 12px;
-          padding: 8px;
-          margin-bottom: 2.5rem;
-          box-shadow: 0 8px 25px rgba(99, 76, 122, 0.06);
-        }
-
-        .elegant-card-inner {
-          border: 1px solid #F0E6EA;
-          border-radius: 8px;
-          padding: 2.5rem 1.2rem 1.5rem;
-          position: relative;
-        }
-
-        .card-ornament {
-          position: absolute;
-          top: -10px;
-          left: 15px;
-          background: #fff;
-          padding: 0 8px;
-          color: #CBAEBD;
-          font-size: 1.4rem;
-        }
-
-        .elegant-text {
-          line-height: 2.2;
-          font-size: 1rem;
-          color: #444;
-          margin-bottom: 1.5rem;
-          word-break: auto-phrase;
-        }
-
-        .scene-text {
-          text-align: center;
-          line-height: 2.5;
-          color: #634C7A;
-          font-size: 1.15rem;
-          margin: 3rem 0;
-          letter-spacing: 0.08em;
-          font-weight: bold;
-        }
-
-        .highlight-large {
-          color: #634C7A;
-          font-size: 1.25em;
-          font-weight: bold;
-        }
-      </style>
-
-      <!-- タイトル -->
-      <h2 class="text-center"
-        style="font-weight: normal; line-height: 1.5; margin-bottom: 1rem; letter-spacing: 0.05em;">
-        <span style="font-size: 1.05rem; color: #444;" class="keep-all">シュガーフラワーが、</span><br>
-        <span class="theme-purple theme-serif keep-all"
-          style="font-size: 2rem; display: inline-block; margin: 0.2rem 0;">特別な日</span><br>
-        <span style="font-size: 1.1rem; color: #444;" class="keep-all">と相性がいい</span><span
-          class="theme-purple theme-serif keep-all" style="font-size: 1.6rem;">理由</span>
-      </h2>
-
-      <div class="elegant-divider"><span>❖</span></div>
-
-      <!-- カード1 -->
-      <div class="elegant-card">
-        <div class="elegant-card-inner">
-          <div class="card-ornament">❦</div>
-          <p class="elegant-text">
-            <span class="theme-purple theme-serif" style="font-size: 1.2rem;">シュガーフラワー</span>は、<br>
-            英国のウェディング文化の中で育まれてきた、<br>
-            祝福を美しく形にする技術です。
-          </p>
-          <img src="images/wedding_cake_1776662879556.webp" alt="ウェディングケーキ"
-            style="width: 100%; border-radius: 6px; display: block;" loading="lazy">
-        </div>
-      </div>
-
-      <!-- カード2 -->
-      <div class="elegant-card">
-        <div class="elegant-card-inner">
-          <div class="card-ornament">❦</div>
-          <p class="elegant-text">
-            ただ可愛いだけではなく、<br>
-            <span class="highlight-large theme-serif">節目の日にふさわしい<br>上品さ</span>があります。
-          </p>
-          <img src="images/wedhinngu.webp" alt="ブーケ" style="width: 100%; border-radius: 6px; display: block;"
-            loading="lazy">
-        </div>
-      </div>
-
-      <!-- シーン列挙 -->
-      <div class="scene-text theme-serif">
-        結婚式。<br>
-        ウェディングケーキまわりの装飾。<br>
-        ウェルカムボード。<br>
-        大切な人へのお祝い。
-      </div>
-
-      <!-- カード3 -->
-      <div class="elegant-card" style="margin-top: 3rem;">
-        <div class="elegant-card-inner" style="padding-top: 2rem;">
-          <p class="elegant-text" style="text-align: center;">
-            <span class="keep-all">そうした場面で、</span><br>
-            <span class="keep-all">気持ちを込めながらも、</span><br>
-            <span class="keep-all">押しつけがましくならずに、</span><br>
-            <span class="highlight-large theme-serif keep-all"
-              style="display: inline-block; margin-top: 0.5rem;">美しく想いを届ける</span><br>
-            <span class="keep-all">ことができます。</span>
-          </p>
-          <img src="images/gift_scene_1776662834380.webp" alt="ギフトシーン"
-            style="width: 100%; border-radius: 6px; display: block; margin-top: 1.5rem;" loading="lazy">
-        </div>
-      </div>
-
-      <!-- 特別な願い -->
-      <div
-        style="background: #fff; border: 1px solid #E1D3DC; border-radius: 12px; padding: 3rem 1.5rem; text-align: center; margin: 4rem 0 3rem; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-        <p style="font-size: 1.1rem; line-height: 2.2; color: #444; margin-bottom: 0;">
-          娘さんの結婚式を、<br>
-          <span class="highlight-large theme-serif" style="display: inline-block; margin-top: 0.3rem;">自分の手で祝いたい。</span>
-        </p>
-        <div class="elegant-divider" style="margin: 1.5rem auto; width: 50%;"><span>❖</span></div>
-        <p style="font-size: 1.05rem; line-height: 2.2; color: #444;">
-          そんな願いとも、<br>
-          とても<span class="theme-purple theme-serif" style="font-size: 1.3rem;">相性のいい技術</span>です。
-        </p>
-      </div>
-
-      <!-- 結び -->
-      <div
-        style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(99, 76, 122, 0.08); margin-bottom: 3.5rem; text-align: center;">
-        <img src="images/lilac_hand_new.webp" alt="ライラックの一輪"
-          style="width: 100%; height: auto; display: block; object-fit: cover;" loading="lazy">
-        <div style="padding: 2.5rem 1.5rem; border-top: 1px solid #F0E6EA;">
-          <p style="line-height: 2; color: #444; margin: 0;">
-            <span class="theme-purple theme-serif"
-              style="font-size: 1.4rem; display: inline-block; margin-bottom: 0.5rem; font-weight: bold;">まずは一輪から、</span><br>
-            <span style="font-size: 1.1rem;">入門講座でその入口に<br>触れてみてください。</span>
-          </p>
-        </div>
-      </div>
-
-      <div style="margin: 0;">
-        <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav"
-          target="_blank" rel="noopener noreferrer" class="btn-cta">詳細をLINEで確認する</a>
-        <p class="note text-center" style="margin-top: 1rem;">
-          <span class="keep-all">日程、Zoomの操作、キットのお届けについて</span><br>
-          <span class="keep-all">事前にご相談いただけます</span>
-        </p>
-      </div>
     </section>
 
     <!-- 08. 講師 -->
@@ -721,11 +522,20 @@
         <hr class="text-divider">
 
         <p class="text-center note">
-          英国での学びも重ね、国内外の<br>コンペティションでも高い評価を<br>受けています。<br><br>
-          2024年には、<br>
-          ジャパンケーキショー<br>シュガークラフト部門<br>グランプリ、連合会会長賞を<br>受賞されています。<br><br>
+          1999年、英国ブルックランズ<br>カレッジ（日本開催校）の<br>シュガークラフトコースを<br>修了。<br>
+          英国生まれのこの技術と、<br>25年以上向き合ってきました。<br><br>
+          2024年には、国内最大級の<br>洋菓子コンテスト<br>『ジャパンケーキショー東京』の<br>シュガークラフト工芸菓子部門で、<br>
+          部門最高賞である<br>連合会会長賞を受賞しました。<br><br>
           高い技術を持つだけではなく、<br>
           初めての方が迷わず進めるように、<br>順番と流れを整えて指導して<br>くださる先生です。
+        </p>
+
+        <hr class="text-divider">
+
+        <p class="text-center note">
+          シュガーフラワーは、<br>時間をかけるほど美しくなる<br>手仕事です。<br><br>
+          早さを競う必要も、<br>仕事にする必要もありません。<br>
+          本格的な技術を、<br>本格的なまま学べます。
         </p>
 
         <div class="grid-2" style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
@@ -745,7 +555,7 @@
         </p>
         <div
           style="position:relative; aspect-ratio:16/9; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer;"
-          onclick="openVideoModal(event, '69ea27808dd5a216e2bbacc1', false)">
+          onclick="openVideoModal(event, '69ea27808dd5a216e2bbacc1', false, 'instructor')">
           <!-- 再生ボタン（オーバーレイ） -->
           <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1);">
             <div style="width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -782,9 +592,9 @@
 
         <h3
           style="text-align: center; color: #634C7A; margin-bottom: 1.5rem; font-weight: bold; font-size: 1.3rem; font-family: 'Noto Serif JP', serif; position: relative;">
-          シュガーフラワービギナー入門講座<br>
+          大人のためのシュガーフラワー<br>入門講座<br>
           <span
-            style="font-size: 0.9rem; color: var(--text-main); letter-spacing: 0.05em; display: block; margin-top: 0.8rem; font-family: sans-serif; font-weight: normal;">「ライラック制作＋スターターキット付き」</span>
+            style="font-size: 0.9rem; color: var(--text-main); letter-spacing: 0.05em; display: block; margin-top: 0.8rem; font-family: sans-serif; font-weight: normal;">「ライラック」</span>
         </h3>
 
         <p
@@ -793,28 +603,31 @@
             style="font-weight: bold; color: var(--text-main); font-size: 0.9rem; letter-spacing: 0.1em;">受講料</span><br>
           <span class="price-highlight"
             style="font-size: 2.2rem; color: #C05467; display: inline-block; margin-top: 0.5rem; font-family: 'Noto Serif JP', serif;">税込
-            7,980円</span>
+            7,980円</span><br>
+          <span class="note" style="display: block; margin-top: 0.5rem; color: #888;">
+            ※5,500円相当のスターターキット込み
+          </span>
         </p>
 
         <p class="text-center"
           style="border-top: 1px dashed #E1D3DC; padding-top: 2rem; margin-bottom: 2rem; color: var(--text-main); line-height: 2; position: relative;">
           <strong style="color: #634C7A;">開催日程</strong><br>
-          5月22日（金）10:00〜13:00<br>
-          5月23日（土）10:00〜13:00<br>
+          7月24日（金）10:00〜13:00<br>
           <span class="note" style="display: block; margin-top: 1rem; color: #888;">
-            ※内容は両日とも同じです。<br>
-            ※ライラック制作／各回3時間です。
+            ※制作内容：ライラック一房と葉<br>
+            ※3時間です。
           </span>
         </p>
 
         <p class="text-center"
           style="font-weight: bold; background: #F4EAF0; color: #C05467; padding: 0.8rem; border-radius: 4px; margin-bottom: 2rem; letter-spacing: 0.05em; position: relative;">
-          申込締切：5月16日（土）まで
+          申込締切：7月18日（土）まで<br>
+          <span style="font-size: 0.75rem; font-weight: normal;">※キット発送のため</span>
         </p>
 
         <p class="text-center note" style="color: #666; line-height: 1.8; position: relative;">
-          各回8名までの少人数開催です。<br>
-          丁寧なサポートを大切にしているため、<br>定員を絞ってご案内しています。
+          少人数開催です。<br>
+          丁寧なサポートを大切にしているため、<br>人数を絞ってご案内しています。
         </p>
       </div>
 
@@ -832,13 +645,15 @@
         style="margin: 2rem 0; border: 1px solid #D4C3CB; border-radius: 8px; background: rgba(255,255,255,0.7);">
         <p style="font-weight: bold; color: #634C7A; margin-bottom: 0.8rem; text-align: center;">お申し込み前にご確認ください</p>
         <ul style="padding-left: 1.25rem; color: #444; line-height: 1.7; font-size: 0.8rem;">
-          <li style="margin-bottom: 0.4rem;"><span class="keep-all">お申し込みボタンの先は、</span><span
-              class="keep-all">Squareの決済ページです。</span></li>
-          <li style="margin-bottom: 0.4rem;"><span class="keep-all">会員登録は不要で、</span><span
-              class="keep-all">クレジットカードなどで</span><span class="keep-all">決済できます。</span></li>
-          <li style="margin-bottom: 0.4rem;"><span class="keep-all">決済完了後、LINEで受講日の調整と</span><span
-              class="keep-all">キット発送先の確認を行います。</span></li>
-          <li><span class="keep-all">キット発送後のキャンセルは</span><span class="keep-all">お受けできません。</span></li>
+          <li style="margin-bottom: 0.4rem;"><span class="keep-all">LINEにご登録いただくと、</span><span
+              class="keep-all">申込リンクとご案内を</span><span class="keep-all">すぐにお送りします。</span></li>
+          <li style="margin-bottom: 0.4rem;"><span class="keep-all">お申し込み（決済）は</span><span
+              class="keep-all">MOSHのページで完了します。</span></li>
+          <li style="margin-bottom: 0.4rem;"><span class="keep-all">決済完了後、スターターキットを</span><span
+              class="keep-all">ご自宅へ発送します。</span></li>
+          <li style="margin-bottom: 0.4rem;"><span class="keep-all">キット発送後のキャンセルは</span><span
+              class="keep-all">お受けできません。</span></li>
+          <li><span class="keep-all">当日ご都合が悪くなった場合は、</span><span class="keep-all">事前にご相談ください。</span></li>
         </ul>
       </div>
       <div style="margin: 3rem 0;">
@@ -848,18 +663,17 @@
         </p>
         <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav"
           target="_blank" rel="noopener noreferrer" class="btn-cta"
-          style="box-shadow: 0 10px 25px rgba(92, 65, 77, 0.25);">詳細を公式LINEで確認する</a>
-        
+          style="box-shadow: 0 10px 25px rgba(92, 65, 77, 0.25);">LINEで申込案内を受け取る</a>
+
         <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px dashed rgba(92,65,77,0.3);">
-          <a data-square-url="https://square.link/u/TN9k2p7C?src=embd" href="https://square.link/u/TN9k2p7C?src=embed"
-            target="_blank" class="square-checkout-btn"
+          <a href="https://mosh.jp/services/15dcdb03bd9f46a4a2bcf18ca873f662"
+            target="_blank" rel="noopener noreferrer"
             style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1.5rem; font-size: 0.8rem; color: #5C414D; border: 1px solid rgba(92, 65, 77, 0.3); border-radius: 30px; text-decoration: none; background: rgba(255,255,255,0.6);">
-            すぐにお申し込みの方はこちら <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
+            今すぐお申し込みの方はこちら <span style="margin-left: 6px; font-size: 0.8em;">&gt;</span>
           </a>
           <p class="note text-center" style="margin-top: 1.5rem; color: #5C414D; line-height: 1.6;">
-            お申し込みはSquareの決済ページで完了します。<br>
-            決済後、LINEで受講日を個別に調整します。<br>
-            スターターキットの発送先もLINEで確認します。
+            お申し込みはMOSHのページで完了します。<br>
+            決済完了後、スターターキットをご自宅へ発送します。
           </p>
         </div>
       </div>
@@ -873,7 +687,7 @@
         <!-- 縦動画（PCでも大きくなりすぎないようmax-width設定） -->
         <div
           style="position:relative; aspect-ratio:9/16; max-width: 320px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 25px rgba(92, 65, 77, 0.2); cursor: pointer;"
-          onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true)">
+          onclick="openVideoModal(event, '691fd0de55e54fac094caf0a', true, 'offer_kit')">
           <!-- 再生ボタン（オーバーレイ） -->
           <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1);">
             <div style="width: 70px; height: 70px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -905,43 +719,30 @@
 
     <!-- お申し込み後の流れ & サポート -->
     <section class="fade-in">
-      <h2 class="section-title" style="font-size: 1.3rem;">Squareでのお申し込み後の流れ</h2>
+      <h2 class="section-title" style="font-size: 1.3rem;">お申し込み後の流れ</h2>
 
       <div class="timeline">
         <div class="timeline-step">
-          <h4>Squareで決済・LINE登録</h4>
-          <p class="note">Squareで申込・決済が完了したあと、LINEへご登録いただきます。</p>
+          <h4>LINE登録・お申し込み</h4>
+          <p class="note"><span class="keep-all">LINEにご登録いただくと、</span><span
+              class="keep-all">すぐに申込リンクが届きます。</span><br><span class="keep-all">MOSHで直接お申し込み</span><span
+              class="keep-all">いただくことも可能です。</span></p>
         </div>
         <div class="timeline-step">
-          <h4>日程調整とキット発送</h4>
-          <p class="note">LINE上で、受講日の調整とスターターキットの発送先確認を行います。</p>
+          <h4>決済・キット発送</h4>
+          <p class="note"><span class="keep-all">決済完了後、スターターキットを</span><span
+              class="keep-all">ご自宅へ発送します。</span></p>
         </div>
         <div class="timeline-step">
           <h4>オンライン受講</h4>
-          <p class="note">キット到着後、オンラインで入門講座をご受講いただきます。<br>受講に必要なご案内も、LINEでお送りします。</p>
+          <p class="note"><span class="keep-all">キット到着後、7月24日に</span><span
+              class="keep-all">オンラインで入門講座を</span><span class="keep-all">ご受講いただきます。</span></p>
         </div>
       </div>
 
       <p class="text-center note" style="margin-top: 1.5rem;">
         スマホだけでもご受講は可能です。<br>
         ただ、できればパソコンとスマホの<br>両方があると、手元を見せたり、<br>お顔を見て話したりしやすくなります。
-      </p>
-
-      <hr class="text-divider">
-
-      <h2 class="section-title">サポートについて</h2>
-      <div class="check-list">
-        <ul class="note">
-          <li>録画視聴があります。視聴期限はありません。</li>
-          <li>あとから何度でも見返していただけます。</li>
-          <li>この入門講座を再開催する場合は、<br>無料で何回でも再受講していただけます。</li>
-          <li>個別補講はありませんが、ご質問は<br>チャットやLINEで受け付けています。</li>
-        </ul>
-      </div>
-
-      <p class="text-center note" style="margin-top: 1.5rem;">
-        わからないまま終わりにくいように、<br>
-        受講後のフォローも整えています。
       </p>
     </section>
 
@@ -950,54 +751,39 @@
       <h2 class="section-title">よくある質問</h2>
 
       <div class="faq-item">
-        <div class="faq-q">シュガーフラワーがまったく初めてでも大丈夫ですか。</div>
+        <div class="faq-q">まったくの初めてでも大丈夫ですか？</div>
         <div class="faq-a" style="word-break: auto-phrase;">
-          はい。大丈夫です。<br>この入門講座は、初めての方にもご参加いただけるように設計しています。必要な道具はスターターキットとしてお届けしますので、何を揃えればよいかわからないまま止まってしまう心配もありません。
+          はい。このレッスンは初めての方のために設計しています。道具はすべてキットで届き、工程ごとに判断基準をお伝えしながら進めます。
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">不器用でもついていけますか。</div>
+        <div class="faq-q">不器用でもついていけますか？</div>
         <div class="faq-a" style="word-break: auto-phrase;">
-          はい。大丈夫です。<br>うまくいかない理由の多くは、器用さよりも「完成までの順番」がわからないことにあります。<br>この入門講座では、流れに沿って迷わず進めていけるように設計しています。ご質問は、チャットやLINEで受け付けています。
+          うまくいかない原因の多くは、器用さではなく、見本・素材・判断基準・伴走が揃っていないことです。このレッスンでは4つすべてを用意しています。
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Zoomなどのオンライン操作が不安でも大丈夫ですか。</div>
+        <div class="faq-q">オンラインの操作が不安です。</div>
         <div class="faq-a" style="word-break: auto-phrase;">
-          はい。大丈夫です。<br>オンライン受講が初めての方や、Zoomの操作に不安がある方には、事前に接続方法や使い方をご案内しています。<br>必要に応じて、レッスン前にオンライン接続の確認や、基本的な操作のレクチャーも行っています。作品づくりに集中していただけるよう、受講前の準備から丁寧にサポートします。ご不安がある方は、お申し込み前にLINEでご相談ください。
+          事前に接続方法をご案内し、必要ならレッスン前に接続確認も行います。スマホだけでも受講可能です（パソコンとの併用がおすすめです）。ご質問はLINEで受け付けています。
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">入門講座だけで終わっても大丈夫ですか。</div>
+        <div class="faq-q">砂糖の花は溶けたりしませんか？保存できますか？</div>
         <div class="faq-a" style="word-break: auto-phrase;">
-          はい。もちろん大丈夫です。<br>まずは、シュガーフラワーの世界に触れていただけたらと思っています。その上で、もっと先へ進みたいと感じられた方にだけ、本講座をご案内しています。
+          はい、保存できます。ケースに入れ、乾燥剤を添えていただければ長くお楽しみいただけます。何十年も美しいまま残っている作品もあります。湿気にだけ気をつければ大丈夫です。詳しい保存のコツはレッスン内でお伝えします。
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">キャンセルはできますか。</div>
+        <div class="faq-q">体験だけで終わってもいいですか？</div>
         <div class="faq-a" style="word-break: auto-phrase;">
-          スターターキット発送後のキャンセルはお受けできません。あらかじめご了承ください。
+          もちろんです。その上で、もっと先へ進みたいと感じた方にだけ、本講座をご案内します。
         </div>
       </div>
-
-      <div class="faq-item">
-        <div class="faq-q">申し込みには会員登録が必要ですか。</div>
-        <div class="faq-a" style="word-break: auto-phrase;">
-          いいえ。Squareの決済ページから、会員登録なしでお申し込みいただけます。<br>決済完了後、LINEで受講日とキット発送先を確認します。
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q">受講日はどのように決まりますか。</div>
-        <div class="faq-a" style="word-break: auto-phrase;">
-          決済完了後、LINEで個別に調整します。<br>スターターキットの到着時期もふまえて、受講日をご案内します。
-        </div>
-      </div>
-
 
     </section>
 
@@ -1006,11 +792,9 @@
       <div class="info-box" style="border: 2px solid var(--accent-gold); margin-top: 2rem;">
         <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 2rem;">まだ申込までは迷う方へ</h2>
         <p class="text-center" style="margin-bottom: 2rem;">
-          ここまでお読みいただき、<br>ありがとうございます。<br><br>
-          入門講座が気になっているけれど、<br>もう少し作品例を見てから<br>決めたい方。<br><br>
-          日程や準備を確認しながら、<br>あらためて検討したい方。<br><br>
-          <span class="text-highlight">そんな方へ向けて、<br>LINEでもご案内をお届けしています。</span><br><br>
-          募集開始のお知らせや、<br>作品の雰囲気がわかる情報。<br>ご質問の受付をご希望の方は、<br>こちらからご登録ください。
+          <span class="keep-all">入門講座が気になっているけれど、</span><span class="keep-all">もう少し確認してから</span><span
+            class="keep-all">決めたい方は、</span><br>
+          <span class="text-highlight keep-all">LINEでご相談いただけます。</span>
         </p>
 
         <div style="margin: 2.5rem 0;">
@@ -1018,7 +802,7 @@
           <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav" class="btn-cta" target="_blank"
             rel="noopener noreferrer"
             style="background: #fff; color: var(--accent-color); border: 2px solid var(--accent-color); box-shadow: none;">
-            まずはLINEで案内を受け取る
+            LINEで申込案内を受け取る
           </a>
         </div>
 
@@ -1029,34 +813,87 @@
       </div>
     </section>
 
-    <!-- 11. クロージング -->
+    <!-- 17. その先の世界（新設・既存カードUI複製） -->
+    <section class="fade-in" style="padding: 4rem 1.5rem;">
+      <h2 class="section-title">一輪で終わらない<br>世界があります。</h2>
+
+      <div style="margin: 3rem 0;">
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+          <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">
+            シュガーフラワービギナー講座<span style="font-size: 0.8rem; font-weight: normal; color: #888;">（学ぶ）</span>
+          </p>
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+            <span class="keep-all">全4回・計14時間で、</span><span class="keep-all">複数の花を作り、</span><br>
+            <span class="keep-all">一つのブーケとして</span><span class="keep-all">完成させることを目指す本講座。</span>
+          </p>
+        </div>
+
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+          <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">
+            華俱楽部<span style="font-size: 0.8rem; font-weight: normal; color: #888;">（続ける）</span>
+          </p>
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+            <span class="keep-all">受講者は無料で参加できる、</span><span class="keep-all">週1回のオンラインアトリエ。</span><br>
+            <span class="keep-all">講師が制作しているZoomが</span><span class="keep-all">毎週開いていて、</span><span
+              class="keep-all">参加・見学・質問すべて自由。</span><br>
+            <span class="keep-all">義務は何もありません。</span><span class="keep-all">学んで終わり、にはなりません。</span>
+          </p>
+        </div>
+
+        <div style="background: #FDF9F6; border: 1px solid #F0E5DE; border-radius: 8px; padding: 2rem 1.5rem; box-shadow: 0 4px 15px rgba(99, 76, 122, 0.03);">
+          <p style="color: #634C7A; font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; font-family: 'Noto Serif JP', serif;">
+            日本シュガーアートドール協会<span style="font-size: 0.8rem; font-weight: normal; color: #888;">（深める・つながる）</span>
+          </p>
+          <p style="color: #444; line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+            <span class="keep-all">月1回の勉強会で、</span><span class="keep-all">シュガークラフト全体を長く学び、</span><br>
+            <span class="keep-all">同じものを美しいと思う人と</span><span class="keep-all">つながる場所</span><span
+              class="keep-all">（月1,100円）。</span>
+          </p>
+        </div>
+      </div>
+
+      <p class="editorial-text" style="text-align: center;">
+        <span class="keep-all">仕事にしなくても、</span><span class="keep-all">本格的に学んでいい。</span><br>
+        <span class="keep-all">これからの人生に、</span><span class="keep-all">もうひとつの美しい教養を。</span>
+      </p>
+    </section>
+
+    <!-- 18. クロージング（v2指示書【E】全面改修） -->
     <section class="fade-in">
-      <h2 class="section-title">最後に</h2>
-      <p class="text-center note">
-        きれいに整った既製品も素敵です。<br>
-        でも、<br>大切な日には、<br>もう少し自分の気持ちが乗ったものを<br>選びたくなることがあります。<br><br>
-        結婚式のような人生の節目にも。<br>
-        大切な人へのお祝いにも。<br><br>
-        <span class="text-highlight">そんなときに、重たくならずに、<br>でもちゃんと想いが伝わる形を、<br>自分の手で作れたら素敵ですよね。</span><br><br>
-        その最初の一歩が、この入門講座です。<br><br>
-        まずは、ライラック制作から<br>シュガーフラワーの入口を<br>体験してみてください。
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <img src="images/lilac_closing_collage.webp" alt="完成作品の別カット" class="photo-frame"
+          style="max-width: 340px; margin: 0 auto; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+      </div>
+
+      <p class="text-center closing-body">
+        <span class="keep-all">講師の平川は、この手仕事とともに</span><br>
+        <span class="keep-all">25年以上を過ごしてきました。</span><br>
+        <span class="keep-all">大学で教え、コンテストに挑み、</span><br>
+        <span class="keep-all">今も毎週、誰かと花を作っています。</span>
+      </p>
+
+      <p class="text-center closing-feel">
+        <span class="keep-all">シュガーフラワーのない人生は、</span><br>
+        <span class="keep-all">考えられなかった——</span>
+      </p>
+
+      <p class="text-center closing-declaration">私は、退屈を知らない。</p>
+
+      <p class="text-center closing-body">
+        <span class="keep-all">まだ日本では、知る人の少ない世界です。</span><br>
+        <span class="keep-all">その入口が、一輪目のライラックです。</span>
       </p>
 
       <div style="margin: 3rem 0;">
-        <p class="text-center note"
-          style="margin-bottom: 1.5rem; font-weight: bold; color: var(--text-main); font-size: 0.95rem;">
-          <span class="keep-all">一輪のライラック作りを、</span><br><span class="keep-all">まずは入門講座で始めてみてください。</span>
-        </p>
         <a href="https://tdcmvfxu.autosns.app/addfriend/s/Yag47QZrzm/@746kokav"
-          target="_blank" rel="noopener noreferrer" class="btn-cta">詳細をLINEで確認する</a>
+          target="_blank" rel="noopener noreferrer" class="btn-cta">LINEで申込案内を受け取る</a>
         <p class="note text-center" style="margin-top: 1rem;">
-          <span class="keep-all">迷われている方は公式LINEで確認ができます</span>
+          <a href="https://mosh.jp/services/15dcdb03bd9f46a4a2bcf18ca873f662" target="_blank"
+            rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">今すぐお申し込みの方はこちら</a>
         </p>
-      </div>
-
-      <div style="text-align: center; margin-top: 2rem;">
-        <img src="images/lilac_closing_collage.webp" alt="完成作品の別カット" class="photo-frame"
-          style="max-width: 340px; margin: 0 auto; aspect-ratio: 1/1; object-fit: cover;" loading="lazy">
+        <p class="note text-center" style="margin-top: 0.5rem;">
+          申込締切：7月18日（土）
+        </p>
       </div>
     </section>
 
@@ -1081,9 +918,31 @@
     </div>
   </div>
 
+  <!-- 写真ライトボックス -->
+  <div id="photo-lightbox" class="modal-overlay" onclick="closePhotoLightbox(event)">
+    <div class="modal-content-wrapper" style="margin: 0 auto; width: 90%;">
+      <span class="modal-close" onclick="closePhotoLightbox(event)">&times;</span>
+      <div class="photo-lightbox-content">
+        <span class="photo-lightbox-nav photo-lightbox-prev" onclick="event.stopPropagation(); navPhotoLightbox(-1)">&#8249;</span>
+        <img id="photo-lightbox-img" src="" alt="">
+        <span class="photo-lightbox-nav photo-lightbox-next" onclick="event.stopPropagation(); navPhotoLightbox(1)">&#8250;</span>
+      </div>
+      <p class="photo-lightbox-dots" id="photo-lightbox-dots"></p>
+    </div>
+  </div>
+
   <script>
-    function openVideoModal(e, gumletId, isVertical) {
+    function scrollToFvVideo(target) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'fv_scroll_tap', target: target });
+      const video = document.getElementById('student-video-container');
+      if (video) video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function openVideoModal(e, gumletId, isVertical, placement) {
       if (e) e.preventDefault();
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'video_modal_open', video_id: gumletId || 'default', placement: placement || 'unknown' });
       // デフォルトID（スターターキット）
       const id = gumletId || '691fd0de55e54fac094caf0a';
       const iframe = document.getElementById('modal-iframe');
@@ -1113,26 +972,49 @@
       }
     }
 
-    (function () {
-      function showSquareCheckout(e) {
-        e.preventDefault();
-        var url = e.currentTarget.getAttribute('data-square-url');
-        var title = 'Square Payment Links';
-        var topWindow = window.top ? window.top : window;
-        var dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX;
-        var dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : topWindow.screenY;
-        var width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-        var height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-        var h = height * 0.75;
-        var w = 500;
-        var systemZoom = width / topWindow.screen.availWidth;
-        var left = (width - w) / 2 / systemZoom + dualScreenLeft;
-        var top = (height - h) / 2 / systemZoom + dualScreenTop;
-        var newWindow = window.open(url, title, 'scrollbars=yes, width=' + (w / systemZoom) + ', height=' + (h / systemZoom) + ', top=' + top + ', left=' + left);
-        if (window.focus) newWindow.focus();
+    // 写真ライトボックス（タップで拡大表示・スワイプで前後の写真へ）
+    let lightboxImages = [];
+    let lightboxIndex = 0;
+
+    function updateLightboxImage() {
+      const el = lightboxImages[lightboxIndex];
+      if (!el) return;
+      const img = document.getElementById('photo-lightbox-img');
+      img.src = el.getAttribute('src');
+      img.alt = el.getAttribute('alt') || '';
+      document.getElementById('photo-lightbox-dots').textContent =
+        (lightboxIndex + 1) + ' / ' + lightboxImages.length;
+    }
+
+    function openPhotoLightbox(group, index) {
+      lightboxImages = [...document.querySelectorAll('[data-photo-group="' + group + '"]')];
+      lightboxIndex = index;
+      updateLightboxImage();
+      document.getElementById('photo-lightbox').classList.add('is-active');
+    }
+
+    function navPhotoLightbox(dir) {
+      if (!lightboxImages.length) return;
+      lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
+      updateLightboxImage();
+    }
+
+    function closePhotoLightbox(e) {
+      if (e.target.id === 'photo-lightbox' || e.target.classList.contains('modal-close')) {
+        document.getElementById('photo-lightbox').classList.remove('is-active');
       }
-      document.querySelectorAll('.square-checkout-btn').forEach(function (btn) {
-        btn.addEventListener('click', showSquareCheckout);
+    }
+
+    (function () {
+      let touchStartX = 0;
+      document.addEventListener('touchstart', function (e) {
+        if (!e.target.closest('.photo-lightbox-content')) return;
+        touchStartX = e.changedTouches[0].screenX;
+      });
+      document.addEventListener('touchend', function (e) {
+        if (!e.target.closest('.photo-lightbox-content')) return;
+        const dx = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(dx) > 40) navPhotoLightbox(dx < 0 ? 1 : -1);
       });
     })();
   </script>

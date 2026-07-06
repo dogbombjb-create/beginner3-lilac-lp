@@ -556,7 +556,7 @@ section.bg-alt {
 
 .fv-catch-premium {
   font-family: "Zen Old Mincho", serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 2.2;
   color: #fff;
   font-weight: 400;
@@ -577,6 +577,7 @@ section.bg-alt {
   /* 太字 */
   padding: 1.5rem 1rem;
   color: var(--accent-gold);
+  cursor: pointer;
   /* どんな写真が来ても絶対に読めるように「すりガラス（グラスモーフィズム）」を敷く */
   background: rgba(30, 30, 40, 0.55);
   backdrop-filter: blur(8px);
@@ -601,6 +602,66 @@ section.bg-alt {
   animation: fadeUpIn 1.5s ease 1.2s both;
   width: 100%;
   max-width: 340px;
+}
+
+/* v1指示書: FV領域限定・動画への視線誘導（新規クラス／既存トークンのみ使用） */
+.fv-guide-text {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.16em;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  animation: fadeUpIn 1.5s ease 1s both;
+  cursor: pointer;
+}
+
+.fv-guide-arrow {
+  width: 1px;
+  height: 32px;
+  background-color: var(--accent-gold);
+  margin: 0 auto;
+  position: relative;
+  animation: growLine 1.5s ease-out 1.1s both;
+  cursor: pointer;
+}
+
+.fv-guide-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid var(--accent-gold);
+  border-bottom: 1px solid var(--accent-gold);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* v2指示書【E】: 締めブロック限定・宣言の格上げ（新規クラス／既存トークンのみ使用） */
+.closing-body {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--text-main);
+}
+
+.closing-feel {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--accent-color);
+  letter-spacing: 0.05em;
+  margin: 2rem 0 0;
+}
+
+.closing-declaration {
+  font-family: "Noto Serif JP", "Zen Old Mincho", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--sales-purple);
+  letter-spacing: 0.1em;
+  margin: 2.5rem 0 3rem;
 }
 
 .fv-deadline {
@@ -1178,8 +1239,12 @@ section.bg-alt {
   }
 
   .fv-catch-premium {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 2;
+  }
+
+  .fv-guide-text {
+    font-size: 1rem;
   }
 
   .timeline {
@@ -1260,4 +1325,56 @@ section.bg-alt {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* 写真ライトボックス（既存モーダルの意匠を流用） */
+.lightbox-trigger {
+  cursor: pointer;
+}
+
+.photo-lightbox-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: pan-y;
+}
+
+.photo-lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.photo-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  user-select: none;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  line-height: 1;
+}
+
+.photo-lightbox-prev {
+  left: -0.5rem;
+}
+
+.photo-lightbox-next {
+  right: -0.5rem;
+}
+
+.photo-lightbox-dots {
+  text-align: center;
+  margin-top: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
 }
