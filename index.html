@@ -124,7 +124,7 @@
         <!-- ③ 主ボタン：軽く踏める入口 -->
         <a href="https://lin.ee/xxkhXjP" target="_blank"
           rel="noopener noreferrer" class="btn-cta"
-          style="font-size: 0.9rem; letter-spacing: 0.06em; white-space: nowrap; padding-left: 0.6rem; padding-right: 0.6rem;">まずLINEで当日の流れを見てみる</a>
+          style="font-size: 0.9rem; letter-spacing: 0.06em; white-space: nowrap; padding-left: 0.6rem; padding-right: 0.6rem;">LINEで詳細を受け取る</a>
         <!-- ④ 副ボタン：決めた人だけ静かに -->
         <div
           style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(99, 76, 122, 0.2);">
@@ -1064,4 +1064,35 @@
     })();
   </script>
 
-  <!-- �
+  <!-- 追従LINE CTA（FVを抜けたら出現） -->
+  <div id="sticky-line-cta" class="sticky-line-cta" aria-hidden="true">
+    <a href="https://lin.ee/xxkhXjP" target="_blank" rel="noopener noreferrer"
+      class="sticky-line-cta__btn">LINEで案内を受け取る</a>
+  </div>
+  <script>
+    (function () {
+      var bar = document.getElementById('sticky-line-cta');
+      if (!bar) return;
+      var lastCtaVisible = false;
+      var ctas = document.querySelectorAll('.btn-cta');
+      var lastCta = ctas[ctas.length - 1];
+      function update() {
+        var passedFv = window.scrollY > window.innerHeight * 0.9;
+        var show = passedFv && !lastCtaVisible;
+        bar.classList.toggle('is-visible', show);
+        bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      }
+      if (lastCta && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          lastCtaVisible = entries[0].isIntersecting;
+          update();
+        }, { threshold: 0 }).observe(lastCta);
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+      update();
+    })();
+  </script>
+</body>
+
+</html>
