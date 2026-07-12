@@ -1384,3 +1384,39 @@ section.bg-alt {
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
+/* ===== 追従LINE CTA（FV後に出現） ===== */
+.sticky-line-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 800;
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(253, 252, 249, 0.96);
+  border-top: 1px solid rgba(181, 101, 130, 0.18);
+  box-shadow: 0 -4px 16px rgba(92, 65, 77, 0.08);
+  transform: translateY(130%);
+  transition: transform 0.35s ease;
+  pointer-events: none;
+}
+.sticky-line-cta.is-visible {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.sticky-line-cta__btn {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-radius: 30px;
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(181, 101, 130, 0.3);
+}
